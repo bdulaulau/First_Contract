@@ -11,13 +11,13 @@ public class EntityControllerPlayerInput : MonoBehaviour
 
 
     public Rigidbody2D rb;
-    public Animator animator;
+    // public Animator animator;
     public bool isFacingRight = true; 
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        // animator = GetComponent<Animator>();
     }
     private void Update()
     {
@@ -38,10 +38,10 @@ public class EntityControllerPlayerInput : MonoBehaviour
         Debug.Log("JUMP");
     }
 
-    void FixedUpdate()
-    {
-        animator.SetFloat("xVelocity", Math.Abs(rb.velocity.x));
-    }
+    // void FixedUpdate()
+    // {
+    //     animator.SetFloat("xVelocity", Math.Abs(rb.velocity.x));
+    // }
     private void OnMove(InputValue value)
     {
         _axis = value.Get<float>();
