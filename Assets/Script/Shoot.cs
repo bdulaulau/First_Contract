@@ -56,7 +56,6 @@ public class Shoot : MonoBehaviour
         }
         else
         {
-            Debug.Log("Pas de gun");
             return;
         }
     }

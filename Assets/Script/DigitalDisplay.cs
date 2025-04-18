@@ -1,4 +1,5 @@
 using System.Collections;
+using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
@@ -12,7 +13,10 @@ public class DigitalDisplay : MonoBehaviour
     [SerializeField]
     private Image[] characters;
 
+    [SerializeField]
+    private KeypadManager keypad;
     private string codeSequence;
+    public static event Action OnCodeCorrect; //action = on appelle toute les fonctions abonnées, sans argument
     void Start()
     {
         codeSequence = "";
@@ -23,6 +27,11 @@ public class DigitalDisplay : MonoBehaviour
         }
 
         PushTheButton.ButtonPressed += AddDigitToCodeSequence;
+    }
+
+    public void SetKeypad(KeypadManager manager)
+    {
+        keypad = manager;
     }
 
     private void AddDigitToCodeSequence(string digitEntered)
@@ -120,11 +129,13 @@ public class DigitalDisplay : MonoBehaviour
         }
     }
 
+
     private void CheckResults()
     {
-        if (codeSequence == "5051")
+        if (codeSequence == keypad.GetCode())
         {
             Debug.Log("Correct!");
+            OnCodeCorrect?.Invoke(); // On déclenche l'événement, le ?. permet de voir si il y a au moins un écouteur avant de lancer l'événement et invoke() appelle toutes les fonctions abonnées à cet événement
         }
         else
         {
@@ -132,7 +143,6 @@ public class DigitalDisplay : MonoBehaviour
             ResetDisplay();
         }
     }
-
     private void ResetDisplay()
     {
         for (int i = 0; i <= characters.Length -1; i++)
