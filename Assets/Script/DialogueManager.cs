@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
 
-    public static DialogueManager instance;
+    public static DialogueManager instance; // Instance unique pour pouvoir y accéder facilement (pattern Singleton)
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogText;
     private Queue<string> sentences;//on va mettre les phrases du dialogue dans une liste, Queue va avoir plusieurs élèments les un derriere les autres
@@ -19,15 +19,15 @@ public class DialogueManager : MonoBehaviour
 
     void Awake()
     {
-        if(instance != null)
+        if(instance != null) // Vérifie si une autre instance existe déjà
         {
             Debug.LogWarning("Il y a plus d'une instance de dialoguemanager dans la scène");
             return;
         }
-        instance = this;
+        instance = this; // Assigne l'instance actuelle comme référence globale
 
         sentences = new Queue<string>(); //on va initialiser notre queue
-        DialogueUI.gameObject.SetActive(false);
+        DialogueUI.gameObject.SetActive(false); // Cache l’interface du dialogue au début
 
         shootScript = FindObjectOfType<Shoot>();// récupère le script Shoot attaché au joueur
     }
@@ -36,7 +36,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (shootScript != null) //on désactive l'arme pour éviter de tirer quand un dialogue se lance
         {
-            shootScript.StatueWeaponOff();
+            shootScript.StatueWeaponOff(); // Désactive l’arme du joueur pendant le dialogue
         }
 
         DialogueUI.gameObject.SetActive(true);
@@ -76,7 +76,7 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
-        DialogueUI.gameObject.SetActive(false);
+        DialogueUI.gameObject.SetActive(false); // Cache l’interface du dialogue
     }
 
 

@@ -18,7 +18,7 @@ public class KeypadManager : MonoBehaviour
     [SerializeField] public string code;
     void Awake()
     {
-        KeypadUI.gameObject.SetActive(false);
+        KeypadUI.gameObject.SetActive(false); // On désactive l’UI du clavier au lancement
     }
 
     private void Start()
@@ -26,7 +26,7 @@ public class KeypadManager : MonoBehaviour
         GameObject player = GameObject.FindWithTag("Player");
         if (player != null)
         {
-            playerInteraction = player.GetComponent<Interaction>();
+            playerInteraction = player.GetComponent<Interaction>(); // On récupère son script d’interaction
         }
         if (display != null)
         {

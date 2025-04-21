@@ -4,10 +4,10 @@ using UnityEngine.UI;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    public Dialogue dialogue;
-    public bool isInRange;
-    private Interaction playerInteraction;
-    public TextMeshProUGUI interactUI;
+    public Dialogue dialogue; // Référence au dialogue à jouer
+    public bool isInRange; // Indique si le joueur est dans la zone de déclenchement
+    private Interaction playerInteraction; // Référence au script d’interaction du joueur
+    public TextMeshProUGUI interactUI; // Texte affiché quand le joueur peut interagir
 
     private void Start()
     {
@@ -19,28 +19,29 @@ public class DialogueTrigger : MonoBehaviour
     }
     void Update()
     {
+        // Si le joueur est dans la zone, qu'on a une référence, et qu’il appuie sur la touche d’interaction
         if(isInRange && playerInteraction != null && playerInteraction.CanInteract())
         {
-            TriggerDialogue();
+            TriggerDialogue(); // Lancer le dialogue
         }
     }
 
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.CompareTag("Player"))
+    private void OnTriggerEnter2D(Collider2D collision) // Appelé quand un objet entre dans la zone du collider (2D)
+    { 
+        if(collision.CompareTag("Player")) // Si c’est le joueur qui entre
         {
             isInRange = true;
-            interactUI.gameObject.SetActive(true);
+            interactUI.gameObject.SetActive(true); // Affiche l’UI d’interaction
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D collision) // Appelé quand un objet sort de la zone du collider (2D)
     {
         if (collision.CompareTag("Player"))
         {
             isInRange = false;
-            interactUI.gameObject.SetActive(false);
+            interactUI.gameObject.SetActive(false); // Cache le texte d’interaction
         }
     }
 

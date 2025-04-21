@@ -150,7 +150,7 @@
                 {
                     "name": "",
                     "id": "32ac1353-5d8e-4d73-9132-6e4279e68c33",
-                    "path": "<Mouse>/rightButton",
+                    "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -183,7 +183,7 @@
                 {
                     "name": "",
                     "id": "d19d0c59-34eb-4cfd-9e1f-671713d7a704",
-                    "path": "<Keyboard>/e",
+                    "path": "<Keyboard>/q",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
