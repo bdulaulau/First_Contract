@@ -37,8 +37,6 @@ public class PlayerController : MonoBehaviour
 
     private void OnDisable() //OnDisable quand l'obj est désactivé, on fait -= pour se désabonner aux boutons
     {
-        inputAsset.FindAction("Player/Jump").started -= HandleJump; //On récupàre l'action de jump
-
         inputAsset.FindAction("Player/Interaction").started -= HandleInteraction; 
 
         inputAsset.FindAction("Player/Shoot").started -= HandleShoot;

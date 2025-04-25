@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 25474547}
   m_Layer: 0
   m_Name: PlayerSpawn
-  m_TagString: Untagged
+  m_TagString: PlayerSpawn
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1019,6 +1019,8 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 279683304}
+  regenDelay: 5
+  regenRate: 0.1
 --- !u!114 &211964927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1652,7 +1654,7 @@ MonoBehaviour:
   m_Follow: {fileID: 211964924}
   m_Lens:
     FieldOfView: 34
-    OrthographicSize: 17.323935
+    OrthographicSize: 6
     NearClipPlane: 0.5
     FarClipPlane: 1000
     Dutch: 0
@@ -2329,7 +2331,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 17.323935
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
