@@ -20,13 +20,13 @@ public class Bullet : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        Enemy enemy = hitInfo.GetComponent<Enemy>();
+        Enemy enemy = hitInfo.GetComponent<Enemy>(); // on essaie de récupérer le composant Enemy sur l'objet touché
         if (enemy != null)
         {
-            enemy.TakeDamage(damage);
+            enemy.TakeDamage(damage); //si trouvé on afflige les dégats
         }
 
-        Cible cible = hitInfo.GetComponent<Cible>();
+        Cible cible = hitInfo.GetComponent<Cible>(); // on essaie aussi de voir si la cible touchée possède le script Cible
         if (cible != null)
         {
             cible.TakeDamage(1); // chaque tir ajoute +1

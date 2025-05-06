@@ -21,7 +21,7 @@ public class Cible : MonoBehaviour
             currentValue += 1;
 
             bool isValid = false;
-            foreach (int code in codesValid)
+            foreach (int code in codesValid)  // On vérifie si la nouvelle valeur fait partie des codes valides
             {
                 if (currentValue == code)
                 {
@@ -30,7 +30,7 @@ public class Cible : MonoBehaviour
                 }
             }
 
-            if (On != null) On.SetActive(isValid);
+            if (On != null) On.SetActive(isValid);  // si l’objet "On" existe on l’active ou le désactive selon la validité
         }
         else
         {
