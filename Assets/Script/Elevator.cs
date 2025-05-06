@@ -42,4 +42,20 @@ public class Elevator : MonoBehaviour
         }
     }
 
+     void OnTriggerEnter2D(Collider2D other)
+    {
+     if (other.CompareTag("Player"))
+     {
+         other.transform.parent = transform; // Le joueur devient enfant de l'ascenseur
+     }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            other.transform.parent = null; // Le joueur n’est plus enfant de l’ascenseur
+     }
+    }
+
 }
