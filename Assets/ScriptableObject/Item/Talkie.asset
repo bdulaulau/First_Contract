@@ -16,3 +16,4 @@ MonoBehaviour:
   Name: Talkie
   description: Un petit appareil pour recevoir les ordres du boss.
   image: {fileID: 21300000, guid: 02609665f57286146b1107b851133711, type: 3}
+  icon: {fileID: 21300000, guid: 044a5e5c5ec79b943910f38a2c841867, type: 3}

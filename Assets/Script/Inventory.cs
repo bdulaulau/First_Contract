@@ -176,7 +176,7 @@ public class Inventory : MonoBehaviour
     {
         if(content.Count > 0 && contentCurrentIndex < content.Count)
         {
-            itemImageUI.sprite = content[contentCurrentIndex].image;
+            itemImageUI.sprite = content[contentCurrentIndex].icon;
             itemNameUI.text = content[contentCurrentIndex].name;
         }
         else

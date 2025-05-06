@@ -7,5 +7,6 @@ public class Item : ScriptableObject
     public string Name;
     public string description;
     public Sprite image; //image dans l'inventaire
+    public Sprite icon;
 }
 
