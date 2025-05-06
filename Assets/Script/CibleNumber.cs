@@ -1,17 +1,16 @@
-//using UnityEngine;
-//using TMPro;
+using UnityEngine;
+using TMPro;
 
-//public class CibleNumber : MonoBehaviour
-//{
-//    public TMP_Text Number;
-    
-//    private void Start()
-//    {
-//        Cible = GetComponent<Cible>();
-//    }
-//    void Update()
-//    {
-//        Number = Cible.currentValue;
-//    }
+public class CibleNumber : MonoBehaviour
+{
+    public TMP_Text Number;
+    public Cible cible;
 
-//}
+    private void Update()
+    {
+        if (cible != null && Number != null)
+        {
+            Number.text = cible.currentValue.ToString();
+        }
+    }
+}
