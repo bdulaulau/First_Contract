@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class UseInventory : MonoBehaviour
 {
-    public bool InvStatue = false; 
+    public bool InvStatue = false;
+    public bool Left = false;
+    public bool Right = false;
     private void OnInventory()
     {
         if (InvStatue == false)
@@ -14,6 +16,34 @@ public class UseInventory : MonoBehaviour
         else
         {
             InvStatue = false;
+        }
+    }
+
+    private void OnClose()
+    {
+        InvStatue = false;
+    }
+
+    private void OnLeft()
+    {
+        if(Left == false)
+        {
+            Left = true;
+        }
+        else
+        {
+            Left = false;
+        }
+    }
+    private void OnRight()
+    {
+        if (Right == false)
+        {
+            Right = true;
+        }
+        else
+        {
+            Right = false;
         }
     }
 }

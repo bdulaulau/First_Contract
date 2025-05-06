@@ -1,3 +1,4 @@
+using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -33,6 +34,11 @@ public class PlayerController : MonoBehaviour
         inputAsset.FindAction("Player/Weapon").started += HandleWeapon;
         inputAsset.FindAction("Player/Inventory").started += HandleInventory;
 
+        inputAsset.FindAction("Player/Left").started += HandleLeft;
+        inputAsset.FindAction("Player/Right").started += HandleRight;
+
+        inputAsset.FindAction("Player/Close").started += HandleClose;
+
         inputAsset.Enable();
     }
 
@@ -54,6 +60,11 @@ public class PlayerController : MonoBehaviour
 
         inputAsset.FindAction("Player/Weapon").started -= HandleWeapon;
         inputAsset.FindAction("Player/Inventory").started -= HandleInventory;
+
+        inputAsset.FindAction("Player/Left").started -= HandleLeft;
+        inputAsset.FindAction("Player/Right").started -= HandleRight;
+
+        inputAsset.FindAction("Player/Close").started -= HandleClose;
 
         inputAsset.Disable();
     }
@@ -105,9 +116,23 @@ public class PlayerController : MonoBehaviour
         Debug.Log($"Interaction : Weapon = {ctx.phase}");
     }
 
-        private void HandleInventory(InputAction.CallbackContext ctx)
+    private void HandleInventory(InputAction.CallbackContext ctx)
     {
-        Debug.Log($"Interaction : Inventory = {ctx.phase}");
+        //Debug.Log($"Interaction : Inventory = {ctx.phase}");
+    }
+
+    private void HandleLeft(InputAction.CallbackContext ctx)
+    {
+
+    }
+
+    private void HandleRight(InputAction.CallbackContext ctx)
+    {
+
+    }
+
+    private void HandleClose(InputAction.CallbackContext ctx)
+    {
     }
 
 }

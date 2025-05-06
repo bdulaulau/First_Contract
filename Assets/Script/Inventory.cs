@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
 using Unity.VisualScripting;
+using UnityEngine.InputSystem;
 
 public class Inventory : MonoBehaviour
 {
@@ -64,6 +65,18 @@ public class Inventory : MonoBehaviour
             {
                 OpenInventory();
             }
+
+            if (useInventory.Left == true)
+            {
+                GetPreviousItem();
+                useInventory.Left = false;
+            }
+
+            if (useInventory.Right == true)
+            {
+                GetNextItem();
+                useInventory.Right = false;
+            }
         }
         SeeDescription();
     }
@@ -109,7 +122,7 @@ public class Inventory : MonoBehaviour
 
     public void SeeDescription()
     {
-        if (SeeDescr == true)
+        if (SeeDescr == true && content.Count > 0 && contentCurrentIndex >= 0 && contentCurrentIndex < content.Count) //on vérifie que la liste n'est pas vide.
         {
             animatorIcon.SetBool("IsOutIcon", false);
             animatorDescr.SetBool("IsOut", true);
