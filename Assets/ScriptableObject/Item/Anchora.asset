@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c138d9cddab5b1a44abfd700a2a6dc98, type: 3}
-  m_Name: Item
+  m_Name: Anchora
   m_EditorClassIdentifier: 
-  id: 1
-  Name: Gun
-  description: Pioupiou
-  image: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  id: 0
+  Name: 
+  description: 
+  image: {fileID: 0}

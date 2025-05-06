@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
-using TMPro; 
+using TMPro;
+using Unity.VisualScripting;
 
 public class Inventory : MonoBehaviour
 {
@@ -15,25 +16,58 @@ public class Inventory : MonoBehaviour
 
     public static Inventory Instance;
 
+    public GameObject InventoryUI;
     public Image ItemDisplayUI;
     public Image SpriteDisplay;
     public TextMeshProUGUI Description;
     public int newItem = 0;
+    public UseInventory useInventory;
+
+    private Animator animator;
 
     private void Awake()
     {
+        animator = InventoryUI.GetComponent<Animator>();
+        animator.SetBool("IsOpen", false); //cache l'inventaire au départ
         if (Instance != null)
         {
             Debug.Log("Il y a plus d'une instance de Inventory dans la sc�ne");
             return;
         }
         Instance = this;
+        InventoryUI.gameObject.SetActive(false);
         ItemDisplayUI.gameObject.SetActive(false);
     }
 
     private void Start()
     {
         UpdateInventoryUI();
+    }
+
+    private void Update()
+    {
+        if (useInventory != null)
+        {
+            if (useInventory.InvStatue == false)
+            {
+                CloseInventory();
+            }
+            if (useInventory.InvStatue == true)
+            {
+                OpenInventory();
+            }
+        }
+    }
+
+    private void CloseInventory()
+    {
+       animator.SetBool("IsOpen", false); 
+    }
+
+    private void OpenInventory()
+    {
+        InventoryUI.gameObject.SetActive(true);
+        animator.SetBool("IsOpen", true);
     }
 
     public void GetItem()

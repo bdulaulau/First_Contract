@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
         inputAsset.FindAction("Player/Rechargement").started += HandleRechargement;
 
         inputAsset.FindAction("Player/Weapon").started += HandleWeapon;
+        inputAsset.FindAction("Player/Inventory").started += HandleInventory;
 
         inputAsset.Enable();
     }
@@ -52,6 +53,7 @@ public class PlayerController : MonoBehaviour
         inputAsset.FindAction("Player/Rechargement").started -= HandleRechargement;
 
         inputAsset.FindAction("Player/Weapon").started -= HandleWeapon;
+        inputAsset.FindAction("Player/Inventory").started -= HandleInventory;
 
         inputAsset.Disable();
     }
@@ -101,6 +103,11 @@ public class PlayerController : MonoBehaviour
     private void HandleWeapon(InputAction.CallbackContext ctx)
     {
         Debug.Log($"Interaction : Weapon = {ctx.phase}");
+    }
+
+        private void HandleInventory(InputAction.CallbackContext ctx)
+    {
+        Debug.Log($"Interaction : Inventory = {ctx.phase}");
     }
 
 }
