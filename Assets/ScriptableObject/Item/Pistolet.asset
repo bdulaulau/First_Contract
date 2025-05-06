@@ -15,4 +15,4 @@ MonoBehaviour:
   id: 1
   Name: Gun
   description: Pioupiou
-  image: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  image: {fileID: 21300000, guid: d4ed009ee328eaf43b45eeba031d28f7, type: 3}

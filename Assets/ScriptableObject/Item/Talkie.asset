@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c138d9cddab5b1a44abfd700a2a6dc98, type: 3}
   m_Name: Talkie
   m_EditorClassIdentifier: 
-  id: 0
-  Name: 
-  description: 
-  image: {fileID: 0}
+  id: 2
+  Name: Talkie
+  description: Un petit appareil pour recevoir les ordres du boss.
+  image: {fileID: 21300000, guid: 02609665f57286146b1107b851133711, type: 3}

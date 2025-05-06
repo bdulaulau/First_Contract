@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c138d9cddab5b1a44abfd700a2a6dc98, type: 3}
   m_Name: Anchora
   m_EditorClassIdentifier: 
-  id: 0
-  Name: 
-  description: 
-  image: {fileID: 0}
+  id: 3
+  Name: Anchora
+  description: "Des cigarettes a l'odeur naus\xE9abonde..."
+  image: {fileID: 21300000, guid: 44b1f764369d06f42bbecb91d3ee1ec4, type: 3}

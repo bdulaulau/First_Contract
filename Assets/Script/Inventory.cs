@@ -22,13 +22,21 @@ public class Inventory : MonoBehaviour
     public TextMeshProUGUI Description;
     public int newItem = 0;
     public UseInventory useInventory;
+    public bool SeeDescr = false; 
 
-    private Animator animator;
+
+    private Animator animatorInventory;
+    private Animator animatorDescr;
+    public GameObject DescriptionUI;
+    public GameObject IconUI;
+    private Animator animatorIcon;
 
     private void Awake()
     {
-        animator = InventoryUI.GetComponent<Animator>();
-        animator.SetBool("IsOpen", false); //cache l'inventaire au départ
+        animatorInventory = InventoryUI.GetComponent<Animator>();
+        animatorDescr = DescriptionUI.GetComponent<Animator>();
+        animatorIcon = IconUI.GetComponent<Animator>();
+        animatorInventory.SetBool("IsOpen", false); //cache l'inventaire au départ
         if (Instance != null)
         {
             Debug.Log("Il y a plus d'une instance de Inventory dans la sc�ne");
@@ -57,17 +65,18 @@ public class Inventory : MonoBehaviour
                 OpenInventory();
             }
         }
+        SeeDescription();
     }
 
     private void CloseInventory()
     {
-       animator.SetBool("IsOpen", false); 
+       animatorInventory.SetBool("IsOpen", false); 
     }
 
     private void OpenInventory()
     {
         InventoryUI.gameObject.SetActive(true);
-        animator.SetBool("IsOpen", true);
+        animatorInventory.SetBool("IsOpen", true);
     }
 
     public void GetItem()
@@ -86,12 +95,32 @@ public class Inventory : MonoBehaviour
         UpdateInventoryUI();
     }
 
+    public void BoolDescription()
+    {
+        if (SeeDescr == false)
+        {
+            SeeDescr = true;
+        }
+        else
+        {
+            SeeDescr = false;
+        }
+    }
+
     public void SeeDescription()
     {
-        ItemDisplayUI.gameObject.SetActive(true);
-        SpriteDisplay.sprite = content[contentCurrentIndex].image;
-        Description.text = content[contentCurrentIndex].description;
-
+        if (SeeDescr == true)
+        {
+            animatorIcon.SetBool("IsOutIcon", false);
+            animatorDescr.SetBool("IsOut", true);
+            SpriteDisplay.sprite = content[contentCurrentIndex].image;
+            Description.text = content[contentCurrentIndex].description;
+        }
+        else
+        {
+            animatorIcon.SetBool("IsOutIcon", true);
+            animatorDescr.SetBool("IsOut", false);
+        }
     }
 
     public void UseItem(Item item)
