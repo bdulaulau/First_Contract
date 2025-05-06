@@ -18,16 +18,23 @@ public class Bullet : MonoBehaviour
 
     }
 
-    void OnTriggerEnter2D (Collider2D hitInfo) //On donne comme argument, hitinfo va garder les informations de la chose touché
+    void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        Enemy enemy = hitInfo.GetComponent<Enemy>(); //on tente de trouver un GetComponent sur l'objet qu'on a touché
-        if (enemy != null) //si enemy n'est PAS égal à null, donc on a trouvé un enemy component sur l'objet touché
+        Enemy enemy = hitInfo.GetComponent<Enemy>();
+        if (enemy != null)
         {
-            enemy.TakeDamage(damage); //on applique les damages
+            enemy.TakeDamage(damage);
         }
-        Destroy(gameObject);
 
+        Cible cible = hitInfo.GetComponent<Cible>();
+        if (cible != null)
+        {
+            cible.TakeDamage(1); // chaque tir ajoute +1
+        }
+
+        Destroy(gameObject); // détruire la balle après impact
     }
+
 
     public void SetDirection(bool facingRight)
     {

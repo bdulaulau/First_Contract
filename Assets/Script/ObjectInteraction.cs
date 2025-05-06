@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 public class ObjectInteraction : MonoBehaviour
@@ -7,6 +8,7 @@ public class ObjectInteraction : MonoBehaviour
     public Item item;
     private Interaction playerInteraction;
     public bool isInRange;
+    public TextMeshProUGUI interactUI;
 
 
     private void Start()
@@ -56,6 +58,7 @@ public class ObjectInteraction : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             isInRange = true;
+            interactUI.gameObject.SetActive(true); // Affiche l’UI d’interaction
         }
     }
 
@@ -64,6 +67,7 @@ public class ObjectInteraction : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             isInRange = false;
+            interactUI.gameObject.SetActive(false); // Cache le texte d’interaction
         }
     }
 }

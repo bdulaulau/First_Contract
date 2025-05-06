@@ -55,7 +55,7 @@ public class Elevator : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             other.transform.parent = null; // Le joueur n’est plus enfant de l’ascenseur
-     }
+        }
     }
 
 }

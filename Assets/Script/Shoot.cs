@@ -91,7 +91,7 @@ public class Shoot : MonoBehaviour
         weaponOut = false;
         StatueUI.text = "Statue Weapon : OFF";
         StatueUI.color = Color.red;
-        animator.SetBool("Gun", false);   
+        //animator.SetBool("Gun", false);   
     }
 
     public void StatueWeaponOn() //permet d'activer l'arme
@@ -99,7 +99,7 @@ public class Shoot : MonoBehaviour
         weaponOut = true;
         StatueUI.text = "Statue Weapon : ON";
         StatueUI.color = Color.green;
-        animator.SetBool("Gun", true); 
+        //animator.SetBool("Gun", true); 
     }
     private void OnRechargement()
     {

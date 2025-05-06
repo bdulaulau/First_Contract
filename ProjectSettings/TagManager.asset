@@ -6,6 +6,8 @@ TagManager:
   tags:
   - FadeSystem
   - PlayerSpawn
+  - Off
+  - On
   layers:
   - Default
   - TransparentFX

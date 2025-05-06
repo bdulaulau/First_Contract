@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -9,6 +10,7 @@ public class GiveItem : MonoBehaviour
     public bool DestroyGiver;
 
     private Interaction playerInteraction;
+    public TextMeshProUGUI interactUI;
 
 
     private void Start()
@@ -32,6 +34,7 @@ public class GiveItem : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             isInRange = true;
+            interactUI.gameObject.SetActive(true); // Affiche l’UI d’interaction
         }
     }
 
@@ -40,6 +43,7 @@ public class GiveItem : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             isInRange = false;
+            interactUI.gameObject.SetActive(false); // Cache le texte d’interaction
         }
     }
 
