@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 58af5731d999b5043a1d7435a6c8ad1b
+guid: d658579a47ecace428949c36ad38fb24
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tilesmap_hangar_0
+      name: tilesmap_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f850836086c3f8a40bc2eed1563f96a3
-      internalID: -2046563594
+      spriteID: 5337027007ba0064bbe4ed71bbdf2794
+      internalID: -1219437755
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_1
+      name: tilesmap_1
       rect:
         serializedVersion: 2
         x: 32
@@ -132,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbd3d2047ae36ee4aa6ca70a12044f92
-      internalID: -1159915040
+      spriteID: bb1739b2020bc3e43a0df2014bde291a
+      internalID: 1553730820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_2
+      name: tilesmap_2
       rect:
         serializedVersion: 2
         x: 64
@@ -153,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4faa93ff196673c47b66158137f56576
-      internalID: -1426889475
+      spriteID: bf1d2e4254e0b8e4b82b2cb56f0d3573
+      internalID: -803783405
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_3
+      name: tilesmap_3
       rect:
         serializedVersion: 2
         x: 96
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f182802df0da35409c133a63a6b1a1b
-      internalID: 1732140648
+      spriteID: 090f01c544d6b0b44b6b0b4ca1240070
+      internalID: 137769450
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_4
+      name: tilesmap_4
       rect:
         serializedVersion: 2
         x: 128
@@ -195,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c14c442871717c146ab0d024c6d4699c
-      internalID: 740074153
+      spriteID: 1093257f9af18894a98eccfe2bbcd5c6
+      internalID: 1112790852
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_5
+      name: tilesmap_5
       rect:
         serializedVersion: 2
         x: 160
@@ -216,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aaeb56b4ac62fd547b0a639b2e7ac116
-      internalID: -124945263
+      spriteID: 847f8dca39517b04ca982e7ebec98bbc
+      internalID: 17747676
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_6
+      name: tilesmap_6
       rect:
         serializedVersion: 2
         x: 192
@@ -237,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29fb4cc2d0f825643b16cde4766e8e76
-      internalID: 1174813199
+      spriteID: 0707949662905ea479eca6d2e3e9657a
+      internalID: -1408558645
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_7
+      name: tilesmap_7
       rect:
         serializedVersion: 2
         x: 224
@@ -258,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65bf1d7ae5bf6384a9187388b172eb44
-      internalID: -2109317175
+      spriteID: d1c73adbabf3e7c42b14efea97f143d7
+      internalID: 1627649448
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_8
+      name: tilesmap_8
       rect:
         serializedVersion: 2
         x: 256
@@ -279,14 +279,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72ea273ad35c9b8448ecc9fec8b2322a
-      internalID: -1590165746
+      spriteID: 680f8fa7a3a164143821f8cbe555dc27
+      internalID: -114848155
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_9
+      name: tilesmap_9
       rect:
         serializedVersion: 2
         x: 288
@@ -300,14 +300,56 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3ad9fbf0c979a84fa29680d907b3e1b
-      internalID: -364815996
+      spriteID: 5b5a8a27eefe12b4b88da46100a133a8
+      internalID: -196199944
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_10
+      name: tilesmap_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 228
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7810bb9f7b8641144845a8c424d26199
+      internalID: -78151590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesmap_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 228
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 023fab923109147488e6d97aac5ff5d4
+      internalID: 1428947673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesmap_12
       rect:
         serializedVersion: 2
         x: 384
@@ -321,14 +363,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d777373d462283459af4bc38219aa56
-      internalID: -1612430953
+      spriteID: 90b25ac028eb98144a64b8e9caca7156
+      internalID: 1798070351
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_11
+      name: tilesmap_13
       rect:
         serializedVersion: 2
         x: 416
@@ -342,14 +384,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 568aef027204d75488b4445fda5f10d1
-      internalID: -86245085
+      spriteID: f63d7b0b89eb82f429a295a08591f41f
+      internalID: 160383057
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_12
+      name: tilesmap_14
       rect:
         serializedVersion: 2
         x: 448
@@ -363,14 +405,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9f9029c1371bdf47b59c19a482eb7e0
-      internalID: 625130824
+      spriteID: cc93836e08302574b9484c9236b7d519
+      internalID: -1234153048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_13
+      name: tilesmap_15
       rect:
         serializedVersion: 2
         x: 480
@@ -384,14 +426,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e82e27eb5aa0b7747ac77b5925519255
-      internalID: -1492761022
+      spriteID: ad03a75e8e245da47945cf554c5887d7
+      internalID: 1245421989
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_14
+      name: tilesmap_16
       rect:
         serializedVersion: 2
         x: 512
@@ -405,14 +447,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a16103623deece2498b74bdfb98c358b
-      internalID: -783961297
+      spriteID: 306a0f95c1860124cb0c308051d73869
+      internalID: -1117420558
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_15
+      name: tilesmap_17
       rect:
         serializedVersion: 2
         x: 544
@@ -426,14 +468,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 294eccba961aea84b85d4bdb10292427
-      internalID: -864607171
+      spriteID: f5245acec17d7d44b8ea67216c79814f
+      internalID: 1128296878
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_16
+      name: tilesmap_18
       rect:
         serializedVersion: 2
         x: 576
@@ -447,14 +489,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fb1f8dbce3fe674aaee9acb183b8877
-      internalID: -1770368970
+      spriteID: 6d565c478048a4046a186b26e8582937
+      internalID: 1706959254
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_17
+      name: tilesmap_19
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 228
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c117b3234a5447b4dacc75a02f3f0937
+      internalID: 1468143283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesmap_20
       rect:
         serializedVersion: 2
         x: 32
@@ -468,14 +531,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13b836b96f3fe714291afe6f5607ddcf
-      internalID: -1046036964
+      spriteID: 89ac82268e2f6d3409f045c08638822d
+      internalID: 139363816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_18
+      name: tilesmap_21
       rect:
         serializedVersion: 2
         x: 64
@@ -489,14 +552,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0511cf4a539f1b4f982b019469144f5
-      internalID: 1226471097
+      spriteID: 0c840656c49d89e47825ef9d409cd9d4
+      internalID: 678473307
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_19
+      name: tilesmap_22
       rect:
         serializedVersion: 2
         x: 96
@@ -510,14 +573,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 361a0f41a9bff20459efecaeff2835ac
-      internalID: 1350116483
+      spriteID: bdda440cab5e6bd488c384c70d642134
+      internalID: -1069046395
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_20
+      name: tilesmap_23
       rect:
         serializedVersion: 2
         x: 128
@@ -531,14 +594,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b539712e14c050f44a66deea9f3d2f76
-      internalID: -134579965
+      spriteID: f51046131dc245646a374142d31a5d1c
+      internalID: 1645402673
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_21
+      name: tilesmap_24
       rect:
         serializedVersion: 2
         x: 160
@@ -552,14 +615,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c1a9486cd7047f41a4c3f639512ab7a
-      internalID: 1519315532
+      spriteID: 84b47c03a8e98244284c95d538c85874
+      internalID: 663726683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_22
+      name: tilesmap_25
       rect:
         serializedVersion: 2
         x: 192
@@ -573,14 +636,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2acb490b1d4278347a2d5b4e6fb1e0ed
-      internalID: -139708194
+      spriteID: a0aaebb8ea910e644806bc7f0ecbd336
+      internalID: 910452152
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_23
+      name: tilesmap_26
       rect:
         serializedVersion: 2
         x: 288
@@ -594,14 +657,56 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a56d87b6ebde6c46aedba3d382a0d86
-      internalID: 1873090827
+      spriteID: fdfe5c8f7e3ffe743912088f0523ec1f
+      internalID: 735866139
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_24
+      name: tilesmap_27
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 196
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3d7ffb0edb17b459fe01f4cda6430e
+      internalID: -1774924245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesmap_28
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 196
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f075ae2b291212499a9c416c43a2924
+      internalID: -128727357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesmap_29
       rect:
         serializedVersion: 2
         x: 384
@@ -615,14 +720,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1da9d946ae2cf30479665c05abf750e4
-      internalID: 1095118166
+      spriteID: 8a1d7b5a46c6614419a79efb098419ed
+      internalID: -478204519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_25
+      name: tilesmap_30
       rect:
         serializedVersion: 2
         x: 416
@@ -636,14 +741,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bda896259dac684d803441f4ebd357e
-      internalID: 1584601039
+      spriteID: b5d90d717030dad478068ba1dd99198d
+      internalID: 2083876846
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_26
+      name: tilesmap_31
       rect:
         serializedVersion: 2
         x: 448
@@ -657,14 +762,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5528238444b6a145954dba3371bbd58
-      internalID: 967766844
+      spriteID: 74392d476dbc28a489de3d0393b9da56
+      internalID: 1192168964
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_27
+      name: tilesmap_32
       rect:
         serializedVersion: 2
         x: 480
@@ -678,14 +783,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db39eeef36e5b9c4bbc4d188afed2722
-      internalID: 2053975439
+      spriteID: e22f4320559dea24386673e5d0e4d06e
+      internalID: -941017127
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_28
+      name: tilesmap_33
       rect:
         serializedVersion: 2
         x: 512
@@ -699,14 +804,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b87faee5efccea44f99f92ca53beef02
-      internalID: -1333842929
+      spriteID: c05066a0e5edea4479c9d91c6e0406a9
+      internalID: 1911385231
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_29
+      name: tilesmap_34
       rect:
         serializedVersion: 2
         x: 544
@@ -720,14 +825,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba9bc52ef1795324db85a57f9c11a6c6
-      internalID: -1338631904
+      spriteID: 2d8fafed8b628664b84fd57984758cd7
+      internalID: -553960667
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_30
+      name: tilesmap_35
       rect:
         serializedVersion: 2
         x: 576
@@ -741,14 +846,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b4697b243ab03e4b85e697f073ba3e1
-      internalID: -1323374717
+      spriteID: c8df06125a8b33b4db95891d1cdd31ca
+      internalID: -76877639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_31
+      name: tilesmap_36
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 196
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6475e24952baf429c7093d4007d0c6
+      internalID: -1931228143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesmap_37
       rect:
         serializedVersion: 2
         x: 32
@@ -762,14 +888,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b4d4c49ddb17ac498f831c1ee490eef
-      internalID: -341577697
+      spriteID: d25fdfd9d339d8942a10616283cb228b
+      internalID: 713914678
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_32
+      name: tilesmap_38
       rect:
         serializedVersion: 2
         x: 64
@@ -783,14 +909,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7041fedbc2a2b9d4ab35f1690ec00975
-      internalID: -1094836579
+      spriteID: 92fcb4ebe6186c442bd8d39379e705ed
+      internalID: -1344849602
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_33
+      name: tilesmap_39
       rect:
         serializedVersion: 2
         x: 96
@@ -804,14 +930,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0b064f488a4cf7469cf470529d5a449
-      internalID: 413327254
+      spriteID: f25f0bf557aa4b64bbb4ba81c2a25c6e
+      internalID: 162895693
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_34
+      name: tilesmap_40
       rect:
         serializedVersion: 2
         x: 128
@@ -825,14 +951,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 385f5fd36b7807c44b2efa15e4b66d4a
-      internalID: 1040306331
+      spriteID: b4cc875a22edff94b861925ee02cb66c
+      internalID: 478559380
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_35
+      name: tilesmap_41
       rect:
         serializedVersion: 2
         x: 160
@@ -846,14 +972,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6f3e4869dcb9de4d9774e26da0a31a5
-      internalID: -1411332732
+      spriteID: 065af8deef8fb6e4b8fdcb8006a3e35e
+      internalID: 661407305
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_36
+      name: tilesmap_42
       rect:
         serializedVersion: 2
         x: 192
@@ -867,14 +993,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ae3964818e113447a96d740e7522288
-      internalID: -931559094
+      spriteID: 71d32edad0035754b9edc9115d7e47ca
+      internalID: 1796605220
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_37
+      name: tilesmap_43
       rect:
         serializedVersion: 2
         x: 288
@@ -888,14 +1014,77 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c60366e296563ff45ba51511cae0c45f
-      internalID: -1605097096
+      spriteID: 58daa96742b44e54fa3252feb1b5bcca
+      internalID: -23175251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_38
+      name: tilesmap_44
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 164
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cedf6ae5243d42f4bbf1f53bd3386490
+      internalID: 1637431236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesmap_45
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 164
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8774d84ff25273b4398a27b423deac60
+      internalID: 1287649994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesmap_46
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 164
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea4c56355a70814583bed41d92cfef1
+      internalID: -138352932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesmap_47
       rect:
         serializedVersion: 2
         x: 416
@@ -909,14 +1098,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af9dd444bea1f6d43899621082ddbf09
-      internalID: 142968294
+      spriteID: cfd352a21262ac247a436ca09c9293ea
+      internalID: -1794601313
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_39
+      name: tilesmap_48
       rect:
         serializedVersion: 2
         x: 448
@@ -930,14 +1119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a55769a89754e784bb424251e1282d54
-      internalID: 860699610
+      spriteID: 3303613d8bf040046ba0138f608ecde4
+      internalID: 2027279191
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_40
+      name: tilesmap_49
       rect:
         serializedVersion: 2
         x: 480
@@ -951,14 +1140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82d8b278b59025e45aa50996128c51db
-      internalID: 1588182987
+      spriteID: ef1fceea1d7104245a86299497478971
+      internalID: -2035927185
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_41
+      name: tilesmap_50
       rect:
         serializedVersion: 2
         x: 512
@@ -972,14 +1161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f57e9c5a93f850340ad54913d806afa2
-      internalID: -171833257
+      spriteID: 18cd09bf111764541a3f8d73e0572488
+      internalID: 509781479
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_42
+      name: tilesmap_51
       rect:
         serializedVersion: 2
         x: 544
@@ -993,14 +1182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9282287fc231ca408d3dba738bf2e94
-      internalID: -902091483
+      spriteID: 98cd6ad1ad0cc21418af6c1ab07dd8a5
+      internalID: 1434081393
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_43
+      name: tilesmap_52
       rect:
         serializedVersion: 2
         x: 0
@@ -1014,14 +1203,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 891ae6d7bc69d3d4f9bb64811b777b92
-      internalID: -2068178279
+      spriteID: 77b37d7598b97cb4f8839acc1b54d8e3
+      internalID: -1089206368
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_44
+      name: tilesmap_53
       rect:
         serializedVersion: 2
         x: 32
@@ -1035,14 +1224,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b6f7ff2ecc070047a3386dd79c2df12
-      internalID: -69036612
+      spriteID: 244230ac3dc0b5a4a8cb6d53cdfa0d27
+      internalID: 1985892015
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_45
+      name: tilesmap_54
       rect:
         serializedVersion: 2
         x: 64
@@ -1056,14 +1245,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98f57b741b9f78b40b7c8383565dd2f9
-      internalID: 1757718033
+      spriteID: 933fb227231e6e346973febd9f2c681a
+      internalID: -146058720
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_46
+      name: tilesmap_55
       rect:
         serializedVersion: 2
         x: 96
@@ -1077,14 +1266,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49e070530a5aee349a2ba536f1aeafd0
-      internalID: -34435386
+      spriteID: 0d39bdef1960dda42b118f7ca0f2b287
+      internalID: 925724089
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_47
+      name: tilesmap_56
       rect:
         serializedVersion: 2
         x: 128
@@ -1098,14 +1287,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 124cccc5398bb7840b4d4f42af82e91b
-      internalID: -1028062236
+      spriteID: 5ab17f9aaf358014084d3f79b4c4460e
+      internalID: -1578259176
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_48
+      name: tilesmap_57
       rect:
         serializedVersion: 2
         x: 160
@@ -1119,14 +1308,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 925b941671839204e8360626a5d72f14
-      internalID: -352914338
+      spriteID: 5227342e13968784e9830a67c92d4cf5
+      internalID: -1199744854
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_49
+      name: tilesmap_58
       rect:
         serializedVersion: 2
         x: 192
@@ -1140,14 +1329,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f92bcd42b4b48c4fb9b834441a2656c
-      internalID: 87847541
+      spriteID: 4f73348a92ccae144b26843d0b453223
+      internalID: 590829577
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_50
+      name: tilesmap_59
       rect:
         serializedVersion: 2
         x: 224
@@ -1161,14 +1350,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 620181c9f6d193f4db9efcc0b2e530c8
-      internalID: 1622523099
+      spriteID: 02fadf98004dc5d4d8ddd272a47bec6d
+      internalID: -351561213
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_51
+      name: tilesmap_60
       rect:
         serializedVersion: 2
         x: 0
@@ -1182,14 +1371,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d5d9a86dfb781045b00365ace5e87e1
-      internalID: -1753390403
+      spriteID: 8c73f207bb219b74784e07a2b2591ac2
+      internalID: 382027419
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_52
+      name: tilesmap_61
       rect:
         serializedVersion: 2
         x: 32
@@ -1203,14 +1392,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65d181ec6c15fe94596b7f775edbbd02
-      internalID: 262004780
+      spriteID: ddd9deea8b49aff44b6b0cd31889469a
+      internalID: -728469788
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_53
+      name: tilesmap_62
       rect:
         serializedVersion: 2
         x: 64
@@ -1224,14 +1413,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b74270e720d06e54aa891482903090a6
-      internalID: 72267422
+      spriteID: 251c56c126380da469e18003fd9d313d
+      internalID: -6846983
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_54
+      name: tilesmap_63
       rect:
         serializedVersion: 2
         x: 96
@@ -1245,14 +1434,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cdb6bf77b96b8844b29321daff9c778
-      internalID: -733272530
+      spriteID: b73683ea717f39a499802584d75d97ab
+      internalID: -1553941216
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_55
+      name: tilesmap_64
       rect:
         serializedVersion: 2
         x: 224
@@ -1266,14 +1455,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a66a145f36075b346820be2cf5449f5d
-      internalID: -2017103280
+      spriteID: 0c648d1e9f941de49a5453933923c15c
+      internalID: 1426246095
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_56
+      name: tilesmap_65
       rect:
         serializedVersion: 2
         x: 352
@@ -1287,14 +1476,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ed68f1b0c6c01349a021d6896a5d93d
-      internalID: -1139015433
+      spriteID: e760d7e5e1fc63f43bd6b07962cf58d9
+      internalID: 332590601
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_57
+      name: tilesmap_66
       rect:
         serializedVersion: 2
         x: 384
@@ -1308,14 +1497,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 462627b4d6bb66f499356b443b51edc3
-      internalID: 511091391
+      spriteID: 9e9d233cb522a644a905204765fe47b0
+      internalID: 2101780074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_58
+      name: tilesmap_67
       rect:
         serializedVersion: 2
         x: 416
@@ -1329,14 +1518,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fe7c8c52a6b224418f4fb76bfea13ae
-      internalID: -1105359560
+      spriteID: 714688bc48c75d444a594291ec69af9d
+      internalID: 1182473941
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_59
+      name: tilesmap_68
       rect:
         serializedVersion: 2
         x: 448
@@ -1350,14 +1539,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0284a1b03e2fe140ab97f343a3d957f
-      internalID: 2100366799
+      spriteID: 59ee8e6477ad6514998f894e02f23479
+      internalID: -1598740501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_60
+      name: tilesmap_69
       rect:
         serializedVersion: 2
         x: 480
@@ -1371,14 +1560,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f41bbec0001a8241abd0a1f8b4775a8
-      internalID: 110853951
+      spriteID: f66a1a5015aadc243ab3046738e4fef5
+      internalID: -1028698282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_61
+      name: tilesmap_70
       rect:
         serializedVersion: 2
         x: 512
@@ -1392,14 +1581,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9311d861c37fd24fba71c667b56655b
-      internalID: -2136512865
+      spriteID: b17fd777aab136b458e0365d81528a69
+      internalID: 699481468
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_62
+      name: tilesmap_71
       rect:
         serializedVersion: 2
         x: 544
@@ -1413,14 +1602,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5106333a13b0e64fae7c465d89da610
-      internalID: 910616645
+      spriteID: cadf028a6e6aa5244b62076f9d545735
+      internalID: -1961682633
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_63
+      name: tilesmap_72
       rect:
         serializedVersion: 2
         x: 576
@@ -1434,14 +1623,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37a530cb7f3cee1459fcf82bcf03fc38
-      internalID: 1541944397
+      spriteID: 528b79df5a8632f48a7588f19541b772
+      internalID: -1077141003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_64
+      name: tilesmap_73
       rect:
         serializedVersion: 2
         x: 608
@@ -1455,14 +1644,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43d394bd5046ccf4b9039690f4b0659a
-      internalID: 766228209
+      spriteID: b8c5f38f92357d94d8750d0667d38954
+      internalID: -1519365263
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_65
+      name: tilesmap_74
       rect:
         serializedVersion: 2
         x: 32
@@ -1476,14 +1665,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4a66bb7d3b1c7a43924a1db51d0bda8
-      internalID: -920423388
+      spriteID: 7a758deb67894af4aabfc156d616be41
+      internalID: 766416330
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_66
+      name: tilesmap_75
       rect:
         serializedVersion: 2
         x: 64
@@ -1497,14 +1686,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6e743efd3c1e604a82399b391c5e498
-      internalID: 1506957241
+      spriteID: 0d96372eb5032294c80dac7a30834eb1
+      internalID: 1893806308
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_67
+      name: tilesmap_76
       rect:
         serializedVersion: 2
         x: 96
@@ -1518,14 +1707,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46b001442a15d9044821030f741b3cd6
-      internalID: -1976771019
+      spriteID: b70094026deefb945a3d9d7446135a89
+      internalID: 1614228436
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_68
+      name: tilesmap_77
       rect:
         serializedVersion: 2
         x: 352
@@ -1539,14 +1728,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bb7d98351af5f246ba44846c5a21036
-      internalID: -1190515418
+      spriteID: 32e2bf56ce6a2584d8c4128c0f2878c8
+      internalID: 1687958730
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_69
+      name: tilesmap_78
       rect:
         serializedVersion: 2
         x: 384
@@ -1560,14 +1749,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e69a63fe3b87ab4f900d285ba3adbd2
-      internalID: 786769576
+      spriteID: 668276be23d939745b11a893d67a5193
+      internalID: -1887704856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_70
+      name: tilesmap_79
       rect:
         serializedVersion: 2
         x: 416
@@ -1581,14 +1770,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ee6c446c2f6fed4991e6182bafe8e88
-      internalID: 1326280213
+      spriteID: 9fa78dcc485405e428fe9bd772f29ef6
+      internalID: -907386172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_71
+      name: tilesmap_80
       rect:
         serializedVersion: 2
         x: 448
@@ -1602,14 +1791,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9b95c520a223ab4fa37b828540e3998
-      internalID: -1319185891
+      spriteID: d7c58258bf3ad0c41a61415bb45fcd6b
+      internalID: -1539817324
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_72
+      name: tilesmap_81
       rect:
         serializedVersion: 2
         x: 480
@@ -1623,14 +1812,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7adff156052374d43a16a80193025ce2
-      internalID: 1821649957
+      spriteID: 05d2948d60d7201418739ae6a0edb440
+      internalID: -853343847
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_73
+      name: tilesmap_82
       rect:
         serializedVersion: 2
         x: 512
@@ -1644,14 +1833,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d19104f3e44a1d34da2e9f4ac0cbd2de
-      internalID: -1569069022
+      spriteID: 67bc2756d13746148a5f1dac5835c4ec
+      internalID: 1736044006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_74
+      name: tilesmap_83
       rect:
         serializedVersion: 2
         x: 544
@@ -1665,14 +1854,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 618eedfb5986f0f498765946e06f79a6
-      internalID: -781659840
+      spriteID: 16529a4cc6faa114296417b3bbb7213c
+      internalID: 1416140968
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_75
+      name: tilesmap_84
       rect:
         serializedVersion: 2
         x: 576
@@ -1686,14 +1875,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 351b3bc9becdec84da5947961213cf0c
-      internalID: -1746573652
+      spriteID: cfa01f9f6bc5938438124a74a339286b
+      internalID: 1641423175
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_76
+      name: tilesmap_85
       rect:
         serializedVersion: 2
         x: 608
@@ -1707,14 +1896,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a04866b7dd730634dae1e42fdc7874ab
-      internalID: 46356779
+      spriteID: 372c6032f3fb08f409f701410cd58f54
+      internalID: 1287894072
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_77
+      name: tilesmap_86
       rect:
         serializedVersion: 2
         x: 32
@@ -1728,14 +1917,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 218d90866bbccc247ae78e0738e1bc1f
-      internalID: 496547724
+      spriteID: fbcf30f8c3fcdc44788ae6d6abd23e80
+      internalID: 773748814
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_78
+      name: tilesmap_87
       rect:
         serializedVersion: 2
         x: 64
@@ -1749,14 +1938,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ed8bfabd628d224ca23a7f7633c27c0
-      internalID: 1092849475
+      spriteID: c6cf65898dab0f941909cf3680202b8b
+      internalID: -304448887
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_79
+      name: tilesmap_88
       rect:
         serializedVersion: 2
         x: 96
@@ -1770,14 +1959,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8265b02323ec60449b2474c24ca9f2c
-      internalID: -1030830372
+      spriteID: bdbdeb32926eb884599f1631a70c7ba0
+      internalID: -1631288235
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_80
+      name: tilesmap_89
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 36
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b57944989316064ab3bbccc4d53ef5f
+      internalID: 4783888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesmap_90
       rect:
         serializedVersion: 2
         x: 320
@@ -1791,14 +2001,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a4bbffbf45342b45b4761c9738d4167
-      internalID: -55647474
+      spriteID: 652193cf5d6a6ed42a29cca70052bbb2
+      internalID: -1889866039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_81
+      name: tilesmap_91
       rect:
         serializedVersion: 2
         x: 352
@@ -1812,14 +2022,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a9882717826f124ebe63cca471791f4
-      internalID: 329637010
+      spriteID: 2ff838a2246351c4d891bae8f7d01254
+      internalID: -1249954
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_82
+      name: tilesmap_92
       rect:
         serializedVersion: 2
         x: 384
@@ -1833,14 +2043,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f99fa2326a7ebb4789c1ba8cb9bb3a5
-      internalID: 1535809491
+      spriteID: a5ef22fa6df1eea45b391f94abb647a1
+      internalID: 968215799
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_83
+      name: tilesmap_93
       rect:
         serializedVersion: 2
         x: 416
@@ -1854,14 +2064,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 111f9467dfe88cb4bad6525b51296913
-      internalID: 85702042
+      spriteID: 99f0b2890da73d241b19250c1d6ddbc4
+      internalID: 1208289009
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_84
+      name: tilesmap_94
       rect:
         serializedVersion: 2
         x: 448
@@ -1875,14 +2085,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2515c419b3a6e15489091d63162b1332
-      internalID: 163032032
+      spriteID: 0bb551d0df88c06468a5d75788499103
+      internalID: 1044804843
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_85
+      name: tilesmap_95
       rect:
         serializedVersion: 2
         x: 480
@@ -1896,14 +2106,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 139bf70eee33a384c9b9e9b39013eabd
-      internalID: 1582337638
+      spriteID: f13c33636a93dab42ada9cfe1e3a18f1
+      internalID: -503666794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_86
+      name: tilesmap_96
       rect:
         serializedVersion: 2
         x: 512
@@ -1917,14 +2127,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a094da8bea5821c499a0cfa03f7d17cd
-      internalID: -1979348718
+      spriteID: 6d19bda68c2ad664eb59fc8f1df1cecb
+      internalID: -522163471
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_87
+      name: tilesmap_97
       rect:
         serializedVersion: 2
         x: 544
@@ -1938,14 +2148,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8cd615afea01704468ff28768d61b754
-      internalID: -184693136
+      spriteID: c5854e3686def184e9d8b434d013e4c7
+      internalID: -97244561
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_88
+      name: tilesmap_98
       rect:
         serializedVersion: 2
         x: 576
@@ -1959,14 +2169,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9281e3856d003384b89223ea3af5847e
-      internalID: 1418074591
+      spriteID: 21277701e1a9c7c4eb823f8d15ff54d2
+      internalID: 1242803267
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_89
+      name: tilesmap_99
       rect:
         serializedVersion: 2
         x: 608
@@ -1980,14 +2190,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e94ea5723b53e1498de799a821fb178
-      internalID: 974951429
+      spriteID: 496c9ef2f7618ac4db966191e37fa104
+      internalID: -500089948
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_90
+      name: tilesmap_100
       rect:
         serializedVersion: 2
         x: 32
@@ -2001,14 +2211,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49b7576f584069d47a3c7137a7f188f0
-      internalID: 2064884824
+      spriteID: e9a991021168aea47907151b47eecda6
+      internalID: -1420217480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_91
+      name: tilesmap_101
       rect:
         serializedVersion: 2
         x: 64
@@ -2022,14 +2232,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ab7ff753417a354b8fbcb3d6b28a4d3
-      internalID: -1630381051
+      spriteID: ae22b7f03395ab442abb142cb26f20f8
+      internalID: 1054826520
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_92
+      name: tilesmap_102
       rect:
         serializedVersion: 2
         x: 96
@@ -2043,14 +2253,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e60dd134474e4d24e97b17e36eccb85c
-      internalID: 463803506
+      spriteID: d9768867231b6934d84f253658457da3
+      internalID: -1685006497
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_93
+      name: tilesmap_103
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 4
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc6815629e75f7b42a1edb9faab94936
+      internalID: -1638099235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilesmap_104
       rect:
         serializedVersion: 2
         x: 256
@@ -2064,14 +2295,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f9d0e1c8a7130f4992ba52de5c42b0f
-      internalID: -366131131
+      spriteID: 0944beccf411c3d47b94c7198b97d11a
+      internalID: 376642796
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_94
+      name: tilesmap_105
       rect:
         serializedVersion: 2
         x: 288
@@ -2085,14 +2316,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c749cb99bb24f6343925ff07d2efbe3a
-      internalID: -1725398891
+      spriteID: 50b09c96536d081439918a8712e475a3
+      internalID: -893155286
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_95
+      name: tilesmap_106
       rect:
         serializedVersion: 2
         x: 320
@@ -2106,14 +2337,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85ef4cdc23bd15346bcb205e37b27c4c
-      internalID: 2098883991
+      spriteID: 340f800742bd25a40b3e9cef0cf4ff89
+      internalID: -108925525
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_96
+      name: tilesmap_107
       rect:
         serializedVersion: 2
         x: 352
@@ -2127,14 +2358,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88d08509ff5cc8244bfd285cfa688356
-      internalID: 1868187836
+      spriteID: e128c207913fba2409b7903bacc122b8
+      internalID: 917939821
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_97
+      name: tilesmap_108
       rect:
         serializedVersion: 2
         x: 384
@@ -2148,14 +2379,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0afd80ffd3977de4db7a75cbc372042e
-      internalID: -982818488
+      spriteID: 7142405a16f38f74396e86661d6d41cb
+      internalID: 1215580620
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_98
+      name: tilesmap_109
       rect:
         serializedVersion: 2
         x: 416
@@ -2169,14 +2400,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e030279a2fdcdc4ea0379215fe5a4b0
-      internalID: -922868397
+      spriteID: 1654871dac0d5144e91fc89ceb78f84c
+      internalID: -1695277281
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_99
+      name: tilesmap_110
       rect:
         serializedVersion: 2
         x: 448
@@ -2190,14 +2421,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5afda2b95de496447b98bd7f0c504ba5
-      internalID: 1613024183
+      spriteID: 0341456c0ba5c9740bd82b33257a44a9
+      internalID: 794913506
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_100
+      name: tilesmap_111
       rect:
         serializedVersion: 2
         x: 480
@@ -2211,14 +2442,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4dd06d9504e065a48abc4c0b51c79c83
-      internalID: 711422841
+      spriteID: bdcb24c56d4e7864c84813780281e5fb
+      internalID: 1751915205
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_101
+      name: tilesmap_112
       rect:
         serializedVersion: 2
         x: 512
@@ -2232,14 +2463,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8418d58872de6eb449e560228f3889b6
-      internalID: 187472147
+      spriteID: adeae7751b60784408ea524888aa3592
+      internalID: 1040289939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_102
+      name: tilesmap_113
       rect:
         serializedVersion: 2
         x: 544
@@ -2253,14 +2484,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b0ead0111532cd458efecc5659d9def
-      internalID: 610988413
+      spriteID: 6d4bd759a7d48124b8aa3593ea2282ce
+      internalID: -1349885571
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_103
+      name: tilesmap_114
       rect:
         serializedVersion: 2
         x: 576
@@ -2274,14 +2505,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31cd07c21ce1af6459b5041b3467be99
-      internalID: 1517992300
+      spriteID: fd533e037be70034a9b2e6d1d6670e2c
+      internalID: 480499291
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilesmap_hangar_104
+      name: tilesmap_115
       rect:
         serializedVersion: 2
         x: 608
@@ -2295,8 +2526,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0245dd71d68e8594e8ff245c2c92db19
-      internalID: 90963321
+      spriteID: 0a57f6ae0c99e37489a48a5b236d11b9
+      internalID: -1602937942
       vertices: []
       indices: 
       edges: []
@@ -2312,111 +2543,122 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      tilesmap_hangar_0: -2046563594
-      tilesmap_hangar_1: -1159915040
-      tilesmap_hangar_10: -1612430953
-      tilesmap_hangar_100: 711422841
-      tilesmap_hangar_101: 187472147
-      tilesmap_hangar_102: 610988413
-      tilesmap_hangar_103: 1517992300
-      tilesmap_hangar_104: 90963321
-      tilesmap_hangar_11: -86245085
-      tilesmap_hangar_12: 625130824
-      tilesmap_hangar_13: -1492761022
-      tilesmap_hangar_14: -783961297
-      tilesmap_hangar_15: -864607171
-      tilesmap_hangar_16: -1770368970
-      tilesmap_hangar_17: -1046036964
-      tilesmap_hangar_18: 1226471097
-      tilesmap_hangar_19: 1350116483
-      tilesmap_hangar_2: -1426889475
-      tilesmap_hangar_20: -134579965
-      tilesmap_hangar_21: 1519315532
-      tilesmap_hangar_22: -139708194
-      tilesmap_hangar_23: 1873090827
-      tilesmap_hangar_24: 1095118166
-      tilesmap_hangar_25: 1584601039
-      tilesmap_hangar_26: 967766844
-      tilesmap_hangar_27: 2053975439
-      tilesmap_hangar_28: -1333842929
-      tilesmap_hangar_29: -1338631904
-      tilesmap_hangar_3: 1732140648
-      tilesmap_hangar_30: -1323374717
-      tilesmap_hangar_31: -341577697
-      tilesmap_hangar_32: -1094836579
-      tilesmap_hangar_33: 413327254
-      tilesmap_hangar_34: 1040306331
-      tilesmap_hangar_35: -1411332732
-      tilesmap_hangar_36: -931559094
-      tilesmap_hangar_37: -1605097096
-      tilesmap_hangar_38: 142968294
-      tilesmap_hangar_39: 860699610
-      tilesmap_hangar_4: 740074153
-      tilesmap_hangar_40: 1588182987
-      tilesmap_hangar_41: -171833257
-      tilesmap_hangar_42: -902091483
-      tilesmap_hangar_43: -2068178279
-      tilesmap_hangar_44: -69036612
-      tilesmap_hangar_45: 1757718033
-      tilesmap_hangar_46: -34435386
-      tilesmap_hangar_47: -1028062236
-      tilesmap_hangar_48: -352914338
-      tilesmap_hangar_49: 87847541
-      tilesmap_hangar_5: -124945263
-      tilesmap_hangar_50: 1622523099
-      tilesmap_hangar_51: -1753390403
-      tilesmap_hangar_52: 262004780
-      tilesmap_hangar_53: 72267422
-      tilesmap_hangar_54: -733272530
-      tilesmap_hangar_55: -2017103280
-      tilesmap_hangar_56: -1139015433
-      tilesmap_hangar_57: 511091391
-      tilesmap_hangar_58: -1105359560
-      tilesmap_hangar_59: 2100366799
-      tilesmap_hangar_6: 1174813199
-      tilesmap_hangar_60: 110853951
-      tilesmap_hangar_61: -2136512865
-      tilesmap_hangar_62: 910616645
-      tilesmap_hangar_63: 1541944397
-      tilesmap_hangar_64: 766228209
-      tilesmap_hangar_65: -920423388
-      tilesmap_hangar_66: 1506957241
-      tilesmap_hangar_67: -1976771019
-      tilesmap_hangar_68: -1190515418
-      tilesmap_hangar_69: 786769576
-      tilesmap_hangar_7: -2109317175
-      tilesmap_hangar_70: 1326280213
-      tilesmap_hangar_71: -1319185891
-      tilesmap_hangar_72: 1821649957
-      tilesmap_hangar_73: -1569069022
-      tilesmap_hangar_74: -781659840
-      tilesmap_hangar_75: -1746573652
-      tilesmap_hangar_76: 46356779
-      tilesmap_hangar_77: 496547724
-      tilesmap_hangar_78: 1092849475
-      tilesmap_hangar_79: -1030830372
-      tilesmap_hangar_8: -1590165746
-      tilesmap_hangar_80: -55647474
-      tilesmap_hangar_81: 329637010
-      tilesmap_hangar_82: 1535809491
-      tilesmap_hangar_83: 85702042
-      tilesmap_hangar_84: 163032032
-      tilesmap_hangar_85: 1582337638
-      tilesmap_hangar_86: -1979348718
-      tilesmap_hangar_87: -184693136
-      tilesmap_hangar_88: 1418074591
-      tilesmap_hangar_89: 974951429
-      tilesmap_hangar_9: -364815996
-      tilesmap_hangar_90: 2064884824
-      tilesmap_hangar_91: -1630381051
-      tilesmap_hangar_92: 463803506
-      tilesmap_hangar_93: -366131131
-      tilesmap_hangar_94: -1725398891
-      tilesmap_hangar_95: 2098883991
-      tilesmap_hangar_96: 1868187836
-      tilesmap_hangar_97: -982818488
-      tilesmap_hangar_98: -922868397
-      tilesmap_hangar_99: 1613024183
+      tilesmap_0: -1219437755
+      tilesmap_1: 1553730820
+      tilesmap_10: -78151590
+      tilesmap_100: -1420217480
+      tilesmap_101: 1054826520
+      tilesmap_102: -1685006497
+      tilesmap_103: -1638099235
+      tilesmap_104: 376642796
+      tilesmap_105: -893155286
+      tilesmap_106: -108925525
+      tilesmap_107: 917939821
+      tilesmap_108: 1215580620
+      tilesmap_109: -1695277281
+      tilesmap_11: 1428947673
+      tilesmap_110: 794913506
+      tilesmap_111: 1751915205
+      tilesmap_112: 1040289939
+      tilesmap_113: -1349885571
+      tilesmap_114: 480499291
+      tilesmap_115: -1602937942
+      tilesmap_12: 1798070351
+      tilesmap_13: 160383057
+      tilesmap_14: -1234153048
+      tilesmap_15: 1245421989
+      tilesmap_16: -1117420558
+      tilesmap_17: 1128296878
+      tilesmap_18: 1706959254
+      tilesmap_19: 1468143283
+      tilesmap_2: -803783405
+      tilesmap_20: 139363816
+      tilesmap_21: 678473307
+      tilesmap_22: -1069046395
+      tilesmap_23: 1645402673
+      tilesmap_24: 663726683
+      tilesmap_25: 910452152
+      tilesmap_26: 735866139
+      tilesmap_27: -1774924245
+      tilesmap_28: -128727357
+      tilesmap_29: -478204519
+      tilesmap_3: 137769450
+      tilesmap_30: 2083876846
+      tilesmap_31: 1192168964
+      tilesmap_32: -941017127
+      tilesmap_33: 1911385231
+      tilesmap_34: -553960667
+      tilesmap_35: -76877639
+      tilesmap_36: -1931228143
+      tilesmap_37: 713914678
+      tilesmap_38: -1344849602
+      tilesmap_39: 162895693
+      tilesmap_4: 1112790852
+      tilesmap_40: 478559380
+      tilesmap_41: 661407305
+      tilesmap_42: 1796605220
+      tilesmap_43: -23175251
+      tilesmap_44: 1637431236
+      tilesmap_45: 1287649994
+      tilesmap_46: -138352932
+      tilesmap_47: -1794601313
+      tilesmap_48: 2027279191
+      tilesmap_49: -2035927185
+      tilesmap_5: 17747676
+      tilesmap_50: 509781479
+      tilesmap_51: 1434081393
+      tilesmap_52: -1089206368
+      tilesmap_53: 1985892015
+      tilesmap_54: -146058720
+      tilesmap_55: 925724089
+      tilesmap_56: -1578259176
+      tilesmap_57: -1199744854
+      tilesmap_58: 590829577
+      tilesmap_59: -351561213
+      tilesmap_6: -1408558645
+      tilesmap_60: 382027419
+      tilesmap_61: -728469788
+      tilesmap_62: -6846983
+      tilesmap_63: -1553941216
+      tilesmap_64: 1426246095
+      tilesmap_65: 332590601
+      tilesmap_66: 2101780074
+      tilesmap_67: 1182473941
+      tilesmap_68: -1598740501
+      tilesmap_69: -1028698282
+      tilesmap_7: 1627649448
+      tilesmap_70: 699481468
+      tilesmap_71: -1961682633
+      tilesmap_72: -1077141003
+      tilesmap_73: -1519365263
+      tilesmap_74: 766416330
+      tilesmap_75: 1893806308
+      tilesmap_76: 1614228436
+      tilesmap_77: 1687958730
+      tilesmap_78: -1887704856
+      tilesmap_79: -907386172
+      tilesmap_8: -114848155
+      tilesmap_80: -1539817324
+      tilesmap_81: -853343847
+      tilesmap_82: 1736044006
+      tilesmap_83: 1416140968
+      tilesmap_84: 1641423175
+      tilesmap_85: 1287894072
+      tilesmap_86: 773748814
+      tilesmap_87: -304448887
+      tilesmap_88: -1631288235
+      tilesmap_89: 4783888
+      tilesmap_9: -196199944
+      tilesmap_90: -1889866039
+      tilesmap_91: -1249954
+      tilesmap_92: 968215799
+      tilesmap_93: 1208289009
+      tilesmap_94: 1044804843
+      tilesmap_95: -503666794
+      tilesmap_96: -522163471
+      tilesmap_97: -97244561
+      tilesmap_98: 1242803267
+      tilesmap_99: -500089948
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
