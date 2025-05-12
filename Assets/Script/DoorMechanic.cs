@@ -1,24 +1,29 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DoorMechanic : MonoBehaviour
 {
-
     [SerializeField] private Door door;
+    [SerializeField] private DigitalDisplay display;
+    [SerializeField] private KeypadManager associatedKeypad;
 
-    private void OnEnable()// unity apelle cette méthode quand l'objet devient actif
+    private void OnEnable()
     {
-        DigitalDisplay.OnCodeCorrect += HandleCorrectCode; //on abonne la méthode HandleCorrectCode à l'event OnCodeCorrect.
+        if (display != null)
+            display.OnCodeCorrect += HandleCorrectCode;
     }
 
     private void OnDisable()
     {
-        DigitalDisplay.OnCodeCorrect -= HandleCorrectCode; //on se désabonne quand l'objet est désactivé pour éviter les bugs
+        if (display != null)
+            display.OnCodeCorrect -= HandleCorrectCode;
     }
 
-    private void HandleCorrectCode()
+    private void HandleCorrectCode(KeypadManager triggeringKeypad)
     {
-        door.OpenDoor(); //la fonction est appelée automatiquement par l'event quand le code est correct
+        Debug.Log($"{gameObject.name} received signal from {triggeringKeypad.name} (expected: {associatedKeypad.name})");
+        if (triggeringKeypad == associatedKeypad)
+        {
+            door.OpenDoor();
+        }
     }
 }

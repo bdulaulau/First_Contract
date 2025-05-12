@@ -1,31 +1,20 @@
-using System.Collections;
 using System;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class DigitalDisplay : MonoBehaviour
 {
-    [SerializeField]
-    private Sprite[] digits;
+    [SerializeField] private Sprite[] digits;
+    [SerializeField] private Image[] characters;
+    [SerializeField] private KeypadManager keypad;
 
-    [SerializeField]
-    private Image[] characters;
+    public event Action<KeypadManager> OnCodeCorrect;
 
-    [SerializeField]
-    private KeypadManager keypad;
-    private string codeSequence;
-    public static event Action OnCodeCorrect; //action = on appelle toute les fonctions abonnées, sans argument
+    private string codeSequence = "";
+
     void Start()
     {
-        codeSequence = "";
-
-        for (int i=0; i <= characters.Length -1; i++)
-        {
-            characters[i].sprite = digits[10];
-        }
-
+        ResetDisplay();
         PushTheButton.ButtonPressed += AddDigitToCodeSequence;
     }
 
@@ -36,127 +25,76 @@ public class DigitalDisplay : MonoBehaviour
 
     private void AddDigitToCodeSequence(string digitEntered)
     {
-        if (codeSequence.Length < 4)
+        if (digitEntered == "Star")
         {
-            switch (digitEntered)
-            {
-                case "Zero":
-                    codeSequence += "0";
-                    DisplayCodeSequence(0);
-                    break;
-                case "One":
-                    codeSequence += "1";
-                    DisplayCodeSequence(1);
-                    break;
-                case "Two":
-                    codeSequence += "2";
-                    DisplayCodeSequence(2);
-                    break;
-                case "Three":
-                    codeSequence += "3";
-                    DisplayCodeSequence(3);
-                    break;
-                case "Four":
-                    codeSequence += "4";
-                    DisplayCodeSequence(4);
-                    break;
-                case "Five":
-                    codeSequence += "5";
-                    DisplayCodeSequence(5);
-                    break;
-                case "Six":
-                    codeSequence += "6";
-                    DisplayCodeSequence(6);
-                    break;
-                case "Seven":
-                    codeSequence += "7";
-                    DisplayCodeSequence(7);
-                    break;
-                case "Eight":
-                    codeSequence += "8";
-                    DisplayCodeSequence(8);
-                    break;
-                case "Nine":
-                    codeSequence += "9";
-                    DisplayCodeSequence(9);
-                    break;                     
-            }
+            ResetDisplay();
+            return;
         }
 
+        if (digitEntered == "Hash")
+        {
+            if (codeSequence.Length > 0)
+                CheckResults();
+            return;
+        }
+
+        if (codeSequence.Length >= 4) return;
+
+        int digit = -1;
         switch (digitEntered)
         {
-            case "Star":
-                ResetDisplay();
-                break;
-            
-            case "Hash":
-                if (codeSequence.Length > 0)
-                {
-                    CheckResults();
-                }
-                break;
+            case "Zero": digit = 0; break;
+            case "One": digit = 1; break;
+            case "Two": digit = 2; break;
+            case "Three": digit = 3; break;
+            case "Four": digit = 4; break;
+            case "Five": digit = 5; break;
+            case "Six": digit = 6; break;
+            case "Seven": digit = 7; break;
+            case "Eight": digit = 8; break;
+            case "Nine": digit = 9; break;
         }
-    }
 
-    private void DisplayCodeSequence(int digitJustEntered)
-    {
-        switch (codeSequence.Length)
+        if (digit != -1)
         {
-            case 1 : 
-                characters[0].sprite = digits[10];
-                characters[1].sprite = digits[10];
-                characters[2].sprite = digits[10];
-                characters[3].sprite = digits[digitJustEntered];
-                break;
-            case 2 :
-                characters[0].sprite = digits[10];
-                characters[1].sprite = digits[10];
-                characters[2].sprite = characters[3].sprite;
-                characters[3].sprite = digits[digitJustEntered];
-                break;
-            case 3:
-                characters[0].sprite = digits[10];
-                characters[1].sprite = characters[2].sprite;
-                characters[2].sprite = characters[3].sprite;
-                characters[3].sprite = digits[digitJustEntered];
-                break;   
-            case 4:
-                characters[0].sprite = characters[1].sprite;
-                characters[1].sprite = characters[2].sprite;
-                characters[2].sprite = characters[3].sprite;
-                characters[3].sprite = digits[digitJustEntered];
-                break;       
+            codeSequence += digit.ToString();
+            UpdateDisplay(digit);
         }
     }
-
 
     private void CheckResults()
     {
+        Debug.Log($"Display {gameObject.name} checking code {codeSequence} against {keypad.GetCode()}");
         if (codeSequence == keypad.GetCode())
         {
-            Debug.Log("Correct!");
-            OnCodeCorrect?.Invoke(); // On déclenche l'événement, le ?. permet de voir si il y a au moins un écouteur avant de lancer l'événement et invoke() appelle toutes les fonctions abonnées à cet événement
+            OnCodeCorrect?.Invoke(keypad);
         }
         else
         {
-            Debug.Log("Wrong!");
             ResetDisplay();
         }
     }
+
     private void ResetDisplay()
     {
-        for (int i = 0; i <= characters.Length -1; i++)
-        {
-            characters[i].sprite = digits[10];
-        }
-
         codeSequence = "";
+        foreach (var img in characters)
+        {
+            img.sprite = digits[10]; // empty
+        }
+    }
+
+    private void UpdateDisplay(int digitJustEntered)
+    {
+        // Just updating the last slot for simplicity
+        for (int i = 0; i < characters.Length - 1; i++)
+            characters[i].sprite = characters[i + 1].sprite;
+
+        characters[characters.Length - 1].sprite = digits[digitJustEntered];
     }
 
     private void OnDestroy()
     {
         PushTheButton.ButtonPressed -= AddDigitToCodeSequence;
     }
-
-
 }

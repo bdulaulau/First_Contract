@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Elevator : MonoBehaviour
+public class ElevatorUp : MonoBehaviour
 {
     public Transform player; // Référence au joueur
     public Transform elevatorswitch; // Référence au bouton ou interrupteur de l’ascenseur
@@ -21,11 +21,11 @@ public class Elevator : MonoBehaviour
     {
         if(Vector2.Distance(player.position, elevatorswitch.position)<1f && Input.GetKeyDown("e")) // Si le joueur est proche du bouton (< 1 unité) et qu’il appuie sur la touche E
         {
-            if(transform.position.y >= downpos.position.y) // Si l’ascenseur est en bas, on prépare le mouvement vers le haut
+            if(transform.position.y <= downpos.position.y) // Si l’ascenseur est en bas, on prépare le mouvement vers le haut
             {
                 iselevatordown = true; // On monte
             }
-            else if (transform.position.y <= upperpos.position.y) // Si l’ascenseur est en haut, on prépare le mouvement vers le bas
+            else if (transform.position.y >= upperpos.position.y) // Si l’ascenseur est en haut, on prépare le mouvement vers le bas
             {
                 iselevatordown = false; // On descend
             
