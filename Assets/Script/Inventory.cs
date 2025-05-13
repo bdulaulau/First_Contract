@@ -83,13 +83,27 @@ public class Inventory : MonoBehaviour
 
     private void CloseInventory()
     {
-       animatorInventory.SetBool("IsOpen", false); 
+        if (animatorInventory != null && animatorInventory.runtimeAnimatorController != null)
+        {
+            animatorInventory.SetBool("IsOpen", false);
+        }
+        else
+        {
+            Debug.LogWarning("Animator ou Controller manquant sur InventoryUI");
+        }
     }
 
     private void OpenInventory()
     {
-        InventoryUI.gameObject.SetActive(true);
-        animatorInventory.SetBool("IsOpen", true);
+        if (animatorInventory != null && animatorInventory.runtimeAnimatorController != null)
+        {
+            InventoryUI.gameObject.SetActive(true);
+            animatorInventory.SetBool("IsOpen", true);
+        }
+        else
+        {
+            Debug.LogWarning("Animator ou Controller manquant sur InventoryUI");
+        }
     }
 
     public void GetItem()

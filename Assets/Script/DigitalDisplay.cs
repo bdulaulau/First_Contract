@@ -8,7 +8,10 @@ public class DigitalDisplay : MonoBehaviour
     [SerializeField] private Image[] characters;
     [SerializeField] private KeypadManager keypad;
 
-    public event Action<KeypadManager> OnCodeCorrect;
+    //public event Action<KeypadManager> OnCodeCorrect;
+
+    public Door door;
+    public bool Open = false;
 
     private string codeSequence = "";
 
@@ -64,10 +67,12 @@ public class DigitalDisplay : MonoBehaviour
 
     private void CheckResults()
     {
-        Debug.Log($"Display {gameObject.name} checking code {codeSequence} against {keypad.GetCode()}");
+        //Debug.Log($"Display {gameObject.name} checking code {codeSequence} against {keypad.GetCode()}");
         if (codeSequence == keypad.GetCode())
         {
-            OnCodeCorrect?.Invoke(keypad);
+            //OnCodeCorrect?.Invoke(keypad);
+            Open = true; 
+
         }
         else
         {

@@ -68,9 +68,4 @@ public class KeypadManager : MonoBehaviour
         }        
     }
 
-    // void TriggerKeypad() //on va rester générale/système car va être utilisé pour plusieurs npc
-    // {
-    //     ; //on appelle notre manager et lance notre dialogue
-    // }
-
 }
