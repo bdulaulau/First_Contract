@@ -83,22 +83,22 @@ public class PlayerController : MonoBehaviour
 
     private void HandleJump(InputAction.CallbackContext ctx) //ctx pour context
     {
-        Debug.Log($"JUMP: Phase = {ctx.phase}"); //$ Permet d'inserer des variables dans le texte
+        // Debug.Log($"JUMP: Phase = {ctx.phase}"); //$ Permet d'inserer des variables dans le texte
     }
     
     
     private void HandleShoot(InputAction.CallbackContext ctx) //ctx pour context
     {
-        Debug.Log($"SHOOT: Phase = {ctx.phase}"); //$ Permet d'inserer des variables dans le texte
+        // Debug.Log($"SHOOT: Phase = {ctx.phase}"); //$ Permet d'inserer des variables dans le texte
     }
     private void HandleInteraction(InputAction.CallbackContext ctx)
     {
-        Debug.Log($"Interaction : Phase = {ctx.phase}");
+        // Debug.Log($"Interaction : Phase = {ctx.phase}");
     }
     private void HandleMove(InputAction.CallbackContext ctx) //ctx pour context
     {
         _axis = ctx.ReadValue<float>();
-        Debug.Log($"MOVE: Phase = {ctx.phase}, Axis = {_axis}"); //$ Permet d'inserer des variables dans le texte
+        // Debug.Log($"MOVE: Phase = {ctx.phase}, Axis = {_axis}"); //$ Permet d'inserer des variables dans le texte
     }
 
     private void HandleSecondary(InputAction.CallbackContext ctx)
@@ -108,12 +108,12 @@ public class PlayerController : MonoBehaviour
 
     private void HandleRechargement(InputAction.CallbackContext ctx)
     {
-        Debug.Log($"Interaction : Rechargement = {ctx.phase}");
+        // Debug.Log($"Interaction : Rechargement = {ctx.phase}");
     }
 
     private void HandleWeapon(InputAction.CallbackContext ctx)
     {
-        Debug.Log($"Interaction : Weapon = {ctx.phase}");
+        // Debug.Log($"Interaction : Weapon = {ctx.phase}");
     }
 
     private void HandleInventory(InputAction.CallbackContext ctx)

@@ -9,6 +9,8 @@ public class ObjectInteraction : MonoBehaviour
     private Interaction playerInteraction;
     public bool isInRange;
     public TextMeshProUGUI interactUI;
+    public KeyDoorTrigger keyDoorTrigger;
+    public bool OpenTheDoor = false;
 
 
     private void Start()
@@ -29,29 +31,34 @@ public class ObjectInteraction : MonoBehaviour
         }
     }
 
-    public void Activate()
+public void Activate()
+{
+    if (Inventory.Instance != null && Inventory.Instance.content.Contains(item))
     {
-        if (Inventory.Instance != null && Inventory.Instance.content.Contains(item))
-        {
-            _isActive = !_isActive; //On assigne la valeur oppos�e � isActivate
+        _isActive = !_isActive;
 
-            if (_isActive) //Si l'object a eu une interaction avec le player, trigger le onactivate event
-            {
-                Debug.Log("ACTIVATIOOOOON");
-                Inventory.Instance.UseItem(item);
-                Inventory.Instance.UpdateInventoryUI();
-            }
-
-            else
-            {
-                Debug.Log("DESACTIVATIONTIONTION");
-            }
-        }
-        else
+        if (_isActive)
         {
-            Debug.Log("Cle manquante !");
+            Debug.Log("Activation avec la clé détectée");
+
+            // Consomme l'objet (clé)
+            Inventory.Instance.UseItem(item);
+            Inventory.Instance.UpdateInventoryUI();
+            OpenTheDoor = true;
+            // Déclenche l'ouverture de porte si possible
+            // KeyDoorTrigger doorTrigger = GetComponent<KeyDoorTrigger>();
+            // if (doorTrigger != null)
+            // {
+            //     doorTrigger.TryUnlock();
+            // 
         }
     }
+    else
+    {
+        Debug.Log("La clé est manquante !");
+    }
+}
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

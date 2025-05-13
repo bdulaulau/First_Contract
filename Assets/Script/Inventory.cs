@@ -83,7 +83,7 @@ public class Inventory : MonoBehaviour
 
     private void CloseInventory()
     {
-    //    animatorInventory.SetBool("IsOpen", false); 
+       animatorInventory.SetBool("IsOpen", false); 
     }
 
     private void OpenInventory()
@@ -131,8 +131,8 @@ public class Inventory : MonoBehaviour
         }
         else
         {
-            // animatorIcon.SetBool("IsOutIcon", true);
-            // animatorDescr.SetBool("IsOut", false);
+            animatorIcon.SetBool("IsOutIcon", true);
+            animatorDescr.SetBool("IsOut", false);
         }
     }
 
