@@ -109,17 +109,23 @@ public class Inventory : MonoBehaviour
     public void GetItem()
     {
         ItemDisplayUI.gameObject.SetActive(true);
+        StartCoroutine(WaitAndExecute());
+    }
 
-        if (content.Count > 0) 
+    private IEnumerator WaitAndExecute()
+    {
+        if (content.Count > 0)
         {
             newItem = content.Count - 1;
         }
-
-        SpriteDisplay.sprite = content[newItem].image;
-        Description.text = content[newItem].description;
-
         GetNextItem();
         UpdateInventoryUI();
+        // Attendre 1 seconde
+        yield return new WaitForSeconds(3.5f);
+
+        // Code à exécuter après 3.5 secondeZ
+        CloseDisplayUI();
+
     }
 
     public void BoolDescription()

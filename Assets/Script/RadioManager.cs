@@ -15,13 +15,16 @@ public class RadioManager : MonoBehaviour
     public Image DialogueUI;
     private Shoot shootScript;
     public RadioTrigger radioTrigger;
+    private Animator animatorTalkie;
+    public Image Talkie;
 
 
     public System.Action onDialogueEnd; // on permet aux autres scripts d'écouter la fin du dialogue
 
     void Awake()
     {
-        if(instance != null) // Vérifie si une autre instance existe déjà
+        animatorTalkie = Talkie.GetComponent<Animator>();
+        if (instance != null) // Vérifie si une autre instance existe déjà
         {
             Debug.LogWarning("Il y a plus d'une instance de dialoguemanager dans la scène");
             return;
@@ -57,13 +60,25 @@ public class RadioManager : MonoBehaviour
     {
         if(sentences.Count == 0) //si la file est vide, terminer le dialogue
         {
-            EndDialogue();
+            animatorTalkie.SetBool("IsOff", true);
+            StartCoroutine(WaitAndExecute());
             return;
         }
 
         string sentence = sentences.Dequeue(); //on récupére le prochain élément de la file d'attente
         StopAllCoroutines(); //dans le doute on stoppe d'abord toute les coroutines pour éviter une supperposition
         StartCoroutine(TypeSentence(sentence));
+    }
+
+    private IEnumerator WaitAndExecute()
+    {
+        // Attendre 1 seconde
+        yield return new WaitForSeconds(1.2f);
+
+        // Code à exécuter après 1 seconde
+        //Debug.Log("Une seconde est passée !");
+
+        EndDialogue();
     }
 
     IEnumerator TypeSentence(string sentence)
