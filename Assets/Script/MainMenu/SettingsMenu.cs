@@ -6,6 +6,11 @@ public class SettingsMenu : MonoBehaviour
 {
     public AudioMixer audiomixer;
 
+    public void Start()
+    {
+        Screen.fullScreen = true;
+    }
+
     public void SetVolume(float volume)
     {
         audiomixer.SetFloat("volume", volume); //on renvoit la valeur volume à l'audiomixer 
