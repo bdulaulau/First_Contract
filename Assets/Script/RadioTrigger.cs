@@ -54,7 +54,7 @@ public class RadioTrigger : MonoBehaviour
 
     private IEnumerator DestroyAfterDialogue()
     {
-        yield return new WaitForSeconds(1f);// Attendre un moment (1 seconde) pour être sûr que le dernier texte est lu
+        yield return new WaitForSeconds(1.8f);// Attendre un moment (1 seconde) pour être sûr que le dernier texte est lu
         Destroy(gameObject); // Détruire l'objet après le délai
     }
 }

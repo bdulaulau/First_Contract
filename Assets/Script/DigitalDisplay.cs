@@ -21,6 +21,42 @@ public class DigitalDisplay : MonoBehaviour
         PushTheButton.ButtonPressed += AddDigitToCodeSequence;
     }
 
+    void Update()
+    {
+        int digit = -1;
+
+        if (Input.GetKeyDown(KeyCode.Alpha0) || Input.GetKeyDown(KeyCode.Keypad0)) digit = 0;
+        else if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Keypad1)) digit = 1;
+        else if (Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Keypad2)) digit = 2;
+        else if (Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Keypad3)) digit = 3;
+        else if (Input.GetKeyDown(KeyCode.Alpha4) || Input.GetKeyDown(KeyCode.Keypad4)) digit = 4;
+        else if (Input.GetKeyDown(KeyCode.Alpha5) || Input.GetKeyDown(KeyCode.Keypad5)) digit = 5;
+        else if (Input.GetKeyDown(KeyCode.Alpha6) || Input.GetKeyDown(KeyCode.Keypad6)) digit = 6;
+        else if (Input.GetKeyDown(KeyCode.Alpha7) || Input.GetKeyDown(KeyCode.Keypad7)) digit = 7;
+        else if (Input.GetKeyDown(KeyCode.Alpha8) || Input.GetKeyDown(KeyCode.Keypad8)) digit = 8;
+        else if (Input.GetKeyDown(KeyCode.Alpha9) || Input.GetKeyDown(KeyCode.Keypad9)) digit = 9;
+
+        // Ajout d'un chiffre
+        if (digit != -1 && codeSequence.Length < 4)
+        {
+            codeSequence += digit.ToString();
+            UpdateDisplay(digit);
+        }
+
+        // Validation du code avec la touche Entrée ou KeypadEnter
+        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
+        {
+            if (codeSequence.Length > 0)
+                CheckResults();
+        }
+
+        // Réinitialisation avec la touche Backspace
+        if (Input.GetKeyDown(KeyCode.Backspace))
+        {
+            ResetDisplay();
+        }
+    }
+
     public void SetKeypad(KeypadManager manager)
     {
         keypad = manager;

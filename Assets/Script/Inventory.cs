@@ -121,9 +121,9 @@ public class Inventory : MonoBehaviour
         GetNextItem();
         UpdateInventoryUI();
         // Attendre 1 seconde
-        yield return new WaitForSeconds(3.5f);
+        yield return new WaitForSeconds(3f);
 
-        // Code à exécuter après 3.5 secondeZ
+        // Code à exécuter après 3 secondeZ
         CloseDisplayUI();
 
     }
