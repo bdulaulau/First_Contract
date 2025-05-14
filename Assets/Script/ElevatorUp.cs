@@ -52,9 +52,16 @@ public class ElevatorUp : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        try
         {
-            other.transform.parent = null; // Le joueur n’est plus enfant de l’ascenseur
+            if (other.CompareTag("Player"))
+            {
+                other.transform.parent = null;
+            }
+        }
+        catch (System.Exception ex)
+        {
+            Debug.LogWarning("Erreur dans OnTriggerExit2D : " + ex.Message);
         }
     }
 
