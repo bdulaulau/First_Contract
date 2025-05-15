@@ -3,6 +3,7 @@ using System.Collections;
 
 public class RadioTrigger : MonoBehaviour
 {
+    public Item talkie;
     public Dialogue dialogue;
     public bool isInRange;
     private bool hasTriggered = false;
@@ -19,7 +20,7 @@ public class RadioTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && Inventory.Instance.content.Contains(talkie))
         {
            isInRange = true;
      }

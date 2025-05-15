@@ -1528,6 +1528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b368224316a60794590e62e85fb49643, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  talkie: {fileID: 11400000, guid: a9fe8005ec7c89949b81914d48bee38b, type: 2}
   dialogue:
     name: Boss
     sentences:
@@ -3877,7 +3878,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -15, y: 53}
+  m_AnchoredPosition: {x: 0, y: -11}
   m_SizeDelta: {x: -455.326, y: -314.8307}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &430780649
@@ -5044,7 +5045,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 4.21875
   m_Depth: 10
   m_CullingMask:
     serializedVersion: 2
@@ -13448,7 +13449,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Un nouvelle objet a ete rajoute a votre tablette !
+  m_text: Un nouvel objet a ete rajoute a votre tablette !
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: efba6090c03fcac4087d0955e35ed458, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -93121,17 +93122,25 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5855626350688834703, guid: b488d30c814581842b2b8e0bae60d431, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.010000229
+      objectReference: {fileID: 0}
     - target: {fileID: 6017707765873619292, guid: b488d30c814581842b2b8e0bae60d431, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.41
       objectReference: {fileID: 0}
     - target: {fileID: 6017707765873619292, guid: b488d30c814581842b2b8e0bae60d431, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.006
+      value: 0.045
       objectReference: {fileID: 0}
     - target: {fileID: 6017707765873619292, guid: b488d30c814581842b2b8e0bae60d431, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 1.799
+      objectReference: {fileID: 0}
+    - target: {fileID: 6612371305480290252, guid: b488d30c814581842b2b8e0bae60d431, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 7779675578860526161, guid: b488d30c814581842b2b8e0bae60d431, type: 3}
       propertyPath: m_SortingOrder

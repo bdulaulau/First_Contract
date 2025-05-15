@@ -86,6 +86,12 @@ public class Inventory : MonoBehaviour
         if (animatorInventory != null && animatorInventory.runtimeAnimatorController != null)
         {
             animatorInventory.SetBool("IsOpen", false);
+            if (SeeDescr == true)
+            {
+                animatorIcon.SetBool("IsOutIcon", false);
+                animatorDescr.SetBool("IsOut", true);
+                SeeDescr = false;
+            }
         }
         else
         {

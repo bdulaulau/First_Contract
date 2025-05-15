@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   Name: Fusible
-  description: "Un petit fusible qui trainait dans le coin. Bizarrement, on peut
-    lire \"2579\" sur son \xE9tiquette..."
+  description: Un petit fusible qui trainait dans le coin. Bizarrement, on peut lire
+    "2579" sur son etiquette...
   image: {fileID: 21300000, guid: df27a94e4cc1c1e4fbe36e72fca7fc70, type: 3}
   icon: {fileID: 21300000, guid: df27a94e4cc1c1e4fbe36e72fca7fc70, type: 3}

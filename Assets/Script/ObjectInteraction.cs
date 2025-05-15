@@ -11,6 +11,7 @@ public class ObjectInteraction : MonoBehaviour
     public TextMeshProUGUI interactUI;
     public KeyDoorTrigger keyDoorTrigger;
     public bool OpenTheDoor = false;
+    private bool Use = false;
 
 
     private void Start()
@@ -45,6 +46,8 @@ public void Activate()
             Inventory.Instance.UseItem(item);
             Inventory.Instance.UpdateInventoryUI();
             OpenTheDoor = true;
+            interactUI.gameObject.SetActive(false);
+            Use = true;
             // Déclenche l'ouverture de porte si possible
             // KeyDoorTrigger doorTrigger = GetComponent<KeyDoorTrigger>();
             // if (doorTrigger != null)
@@ -64,8 +67,11 @@ public void Activate()
     {
         if (collision.CompareTag("Player"))
         {
-            isInRange = true;
-            interactUI.gameObject.SetActive(true); // Affiche l’UI d’interaction
+            if (Use == false)
+            {
+                isInRange = true;
+                interactUI.gameObject.SetActive(true); // Affiche l’UI d’interaction
+            }
         }
     }
 

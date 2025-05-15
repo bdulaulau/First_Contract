@@ -65,7 +65,12 @@ public class KeypadManager : MonoBehaviour
         if(isInRange && playerInteraction != null && playerInteraction.CanInteract())
         {
             KeypadUI.gameObject.SetActive(true);
-        }        
+        } 
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            KeypadUI.gameObject.SetActive(false);
+        }       
     }
 
 }
