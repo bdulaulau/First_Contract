@@ -11,13 +11,14 @@ public class Shoot : MonoBehaviour
     public Item gun;
     public TMP_Text munitionUI;
     
-    public Animator animator;
+    public Animator animationGun;
     
     public TMP_Text StatueUI;
     private int _munition = 10;
     public int munitionMax = 10;
     public bool weaponOut = false;
     public bool _weaponGet = false;
+
     void Start()
     {
         _playerController = GetComponent<EntityControllerPlayerInput>(); // Récupération du script de déplacement
@@ -77,29 +78,37 @@ public class Shoot : MonoBehaviour
         if (weaponOut == true)
         {
             StatueWeaponOff();
+            //animationGun.SetBool("GunOut", false);
         }
 
         else
         {
             StatueWeaponOn();
+            //animationGun.SetBool("GunOut", true);
         }
 
     }
 
     public void StatueWeaponOff() //permet de désactiver l'arme
     {
-        weaponOut = false;
-        StatueUI.text = "Statue Weapon : OFF";
-        StatueUI.color = Color.red;
-        //animator.SetBool("Gun", false);   
+        if (Inventory.Instance.content.Contains(gun))
+        {
+            weaponOut = false;
+            StatueUI.text = "Statue Weapon : OFF";
+            StatueUI.color = Color.red;
+            animationGun.SetTrigger("GunOff");
+        }
     }
 
     public void StatueWeaponOn() //permet d'activer l'arme
     {
-        weaponOut = true;
-        StatueUI.text = "Statue Weapon : ON";
-        StatueUI.color = Color.green;
-        //animator.SetBool("Gun", true); 
+        if (Inventory.Instance.content.Contains(gun))
+        {
+            weaponOut = true;
+            StatueUI.text = "Statue Weapon : ON";
+            StatueUI.color = Color.green;
+            animationGun.SetTrigger("GunOn");
+        }
     }
     private void OnRechargement()
     {
