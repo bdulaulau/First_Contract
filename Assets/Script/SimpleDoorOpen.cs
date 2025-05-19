@@ -5,6 +5,7 @@ using UnityEngine;
 public class SimpleDoorOpen : MonoBehaviour
 {
     public float openOffset = 4f;
+    public Animator animator;
     public float speed = 2f;
     public bool isOpen = false;
 
@@ -12,6 +13,10 @@ public class SimpleDoorOpen : MonoBehaviour
     {
         if (isOpen)
         {
+            if (animator.enabled)
+            {
+                animator.enabled = false;
+            }
             transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x, openOffset, transform.position.z), speed * Time.deltaTime);
         }
     }
