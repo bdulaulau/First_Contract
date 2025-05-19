@@ -16,5 +16,5 @@ MonoBehaviour:
   Name: Fusible
   description: Un petit fusible qui trainait dans le coin. Bizarrement, on peut lire
     "2579" sur son etiquette...
-  image: {fileID: 21300000, guid: df27a94e4cc1c1e4fbe36e72fca7fc70, type: 3}
-  icon: {fileID: 21300000, guid: df27a94e4cc1c1e4fbe36e72fca7fc70, type: 3}
+  image: {fileID: 21300000, guid: fdfeaad883c886147b8bcc90ad13ce24, type: 3}
+  icon: {fileID: 21300000, guid: 30e510f5ad671764fbde4767d742b2f3, type: 3}
