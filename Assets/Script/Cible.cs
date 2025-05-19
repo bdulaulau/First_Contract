@@ -21,16 +21,16 @@ public class Cible : MonoBehaviour
             currentValue += 1;
 
             bool isValid = false;
-            foreach (int code in codesValid)  // On vérifie si la nouvelle valeur fait partie des codes valides
+            foreach (int code in codesValid)  // On vï¿½rifie si la nouvelle valeur fait partie des codes valides
             {
                 if (currentValue == code)
                 {
                     isValid = true;
-                    break; //on casse la loop dès que c'est bon
+                    break; //on casse la loop dï¿½s que c'est bon
                 }
             }
 
-            if (On != null) On.SetActive(isValid);  // si l’objet "On" existe on l’active ou le désactive selon la validité
+            if (On != null) On.SetActive(isValid);  // si l'objet "On" existe on l'active ou le dÃ©sactive selon la validitÃ©
         }
         else
         {
