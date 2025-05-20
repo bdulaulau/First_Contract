@@ -1,4 +1,7 @@
 using UnityEngine;
+using UnityEngine.UI;
+using System.Collections;
+using System.Collections.Generic;
 
 public class KeyDoorTrigger : MonoBehaviour
 {
@@ -11,6 +14,10 @@ public class KeyDoorTrigger : MonoBehaviour
     [Header("Interaction unique ?")]
     [SerializeField] private bool consumeKey = true;
 
+
+    [SerializeField] private Image fusibleUI;
+    [SerializeField] private Animator animatorFusible; 
+
     public bool OpenTheDoor = false;
 
     private bool alreadyUsed = false;
@@ -21,22 +28,37 @@ public class KeyDoorTrigger : MonoBehaviour
 
         if (Inventory.Instance != null && Inventory.Instance.content.Contains(requiredKey))
         {
+
             if (consumeKey)
             {
                 Inventory.Instance.UseItem(requiredKey);
                 Inventory.Instance.UpdateInventoryUI();
+                StartCoroutine(WaitAndExecute());
             }
 
             if (targetDoor != null)
                 OpenTheDoor = true;
 
             alreadyUsed = true;
+        }
+    }
+    private IEnumerator WaitAndExecute()
+    {
+        // Attendre 1 seconde
+        yield return new WaitForSeconds(1.5f);
+        TriggerRepair();
+    }
 
-            Debug.Log("Clé utilisée, porte ouverte !");
+        public void TriggerRepair()
+    {
+        if (animatorFusible != null)
+        {
+            animatorFusible.SetBool("Repair", true); ;
+            Debug.Log("Animation de réparation lancée !");
         }
         else
         {
-            Debug.Log("Clé manquante dans l'inventaire !");
+            Debug.LogWarning("Animator non assigné !");
         }
     }
 }
