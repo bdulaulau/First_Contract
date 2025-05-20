@@ -30,9 +30,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2232186924482154885}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1281.1647, y: 549.90686, z: 0}
-  m_LocalScale: {x: 0.10732, y: 0.10732, z: 0.10732}
+  m_LocalRotation: {x: 0, y: 0, z: 0.0056521646, w: 0.999984}
+  m_LocalPosition: {x: 1281.012, y: 549.933, z: 0}
+  m_LocalScale: {x: 0.8437771, y: 0.8437771, z: 0.8437771}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -78,12 +78,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 979859027, guid: 2d6f9910115e9124a9737f1618e28f5b, type: 3}
+  m_Color: {r: 1, g: 0.4406382, b: 0, a: 0.5372549}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.71875, y: 0.71875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -148,9 +148,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.090995386, y: -0.11658783}
+  m_Offset: {x: 0.0035568788, y: 0.08273307}
   serializedVersion: 2
-  m_Radius: 2.5768754
+  m_Radius: 0.2567726
 --- !u!114 &6658010220670781362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,7 +176,7 @@ Animator:
   m_GameObject: {fileID: 2232186924482154885}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dc2339c79375f7149aafb6c112bf4a1d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.19727534
-  m_PointLightOuterRadius: 1
+  m_PointLightOuterRadius: 0.48587975
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1

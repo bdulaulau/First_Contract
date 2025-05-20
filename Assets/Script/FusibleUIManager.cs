@@ -9,9 +9,6 @@ public class FusibleUIManager : MonoBehaviour
     [SerializeField] private Image fusibleUI;
     [SerializeField] private Animator animatorFusible; 
 
-    [Header("Nom du trigger dans l'Animator")]
-    [SerializeField] private string triggerName = "repair";
-
     private bool isPlayerInZone = false;
     private bool isUIOpen = false;
     public KeyDoorTrigger keyDoorTrigger;
