@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,6 +16,7 @@ public class FusibleUIManager : MonoBehaviour
     private bool isUIOpen = false;
     public KeyDoorTrigger keyDoorTrigger;
     public ObjectInteraction objectInteraction;
+    public GameObject Feedback;
     private void Start()
     {
         if (fusibleUI != null)
@@ -56,12 +59,21 @@ public class FusibleUIManager : MonoBehaviour
         if (animatorFusible != null)
         {
             animatorFusible.SetBool("Repair", true); ;
+            StartCoroutine(WaitAndExecute());
             Debug.Log("Animation de réparation lancée !");
         }
         else
         {
             Debug.LogWarning("Animator non assigné !");
         }
+    }
+
+    private IEnumerator WaitAndExecute()
+    {
+
+        yield return new WaitForSeconds(1.2f);
+        Feedback.gameObject.SetActive(true);
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
