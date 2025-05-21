@@ -10,10 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c138d9cddab5b1a44abfd700a2a6dc98, type: 3}
-  m_Name: Pistolet
+  m_Name: VOLT Mk.IV
   m_EditorClassIdentifier: 
   id: 1
-  Name: Gun
-  description: Pioupiou
+  Name: VOLT Mk.IV
+  description: 'Concu dans les ruelles obscures de la station, le VOLT est un pistolet
+    energetique compact efficace sur le terrain. Une arme discrete pour ceux qui
+    preferent l''efficacite a la brutalite. (Appuyez sur [A] pour enlever le cran
+    de surete.) '
   image: {fileID: 21300000, guid: dd9c37aa504e61f48b6adbd309b155f2, type: 3}
   icon: {fileID: 21300000, guid: d4ed009ee328eaf43b45eeba031d28f7, type: 3}
