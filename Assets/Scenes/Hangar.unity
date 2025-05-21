@@ -7271,6 +7271,7 @@ MonoBehaviour:
   keypad: {fileID: 729670284}
   door: {fileID: 805094387}
   Open: 0
+  KeypadUI: {fileID: 1273668092}
 --- !u!114 &600391702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8775,6 +8776,7 @@ MonoBehaviour:
   keypad: {fileID: 842793812}
   door: {fileID: 1337431518}
   Open: 0
+  KeypadUI: {fileID: 482765419}
 --- !u!114 &717684968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22584,6 +22586,7 @@ MonoBehaviour:
   keypad: {fileID: 386651945}
   door: {fileID: 1211711821}
   Open: 0
+  KeypadUI: {fileID: 2114351780}
 --- !u!114 &1959300436
 MonoBehaviour:
   m_ObjectHideFlags: 0

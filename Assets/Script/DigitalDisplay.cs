@@ -12,6 +12,7 @@ public class DigitalDisplay : MonoBehaviour
 
     public Door door;
     public bool Open = false;
+    public GameObject KeypadUI;
 
     private string codeSequence = "";
 
@@ -107,8 +108,8 @@ public class DigitalDisplay : MonoBehaviour
         if (codeSequence == keypad.GetCode())
         {
             //OnCodeCorrect?.Invoke(keypad);
-            Open = true; 
-
+            Open = true;
+            KeypadUI.gameObject.SetActive(false);
         }
         else
         {
