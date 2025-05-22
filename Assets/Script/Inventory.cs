@@ -32,6 +32,8 @@ public class Inventory : MonoBehaviour
     public GameObject IconUI;
     private Animator animatorIcon;
 
+    public Shoot shoot;
+
     private void Awake()
     {
         animatorInventory = InventoryUI.GetComponent<Animator>();
@@ -103,6 +105,7 @@ public class Inventory : MonoBehaviour
     {
         if (animatorInventory != null && animatorInventory.runtimeAnimatorController != null)
         {
+            shoot.StatueWeaponOff();
             InventoryUI.gameObject.SetActive(true);
             animatorInventory.SetBool("IsOpen", true);
         }

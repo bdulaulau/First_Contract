@@ -12,6 +12,7 @@ public class KeypadManager : MonoBehaviour
     public bool isInRange;
     private Interaction playerInteraction;
     public TextMeshProUGUI interactUI;
+    public Shoot shoot;
 
     [SerializeField] private DigitalDisplay display;
 
@@ -65,6 +66,8 @@ public class KeypadManager : MonoBehaviour
         if(isInRange && playerInteraction != null && playerInteraction.CanInteract())
         {
             KeypadUI.gameObject.SetActive(true);
+            shoot.StatueWeaponOff();
+
         } 
 
         if (Input.GetKeyDown(KeyCode.Escape))
