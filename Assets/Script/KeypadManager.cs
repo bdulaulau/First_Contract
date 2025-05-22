@@ -60,6 +60,10 @@ public class KeypadManager : MonoBehaviour
         {
             KeypadUI.gameObject.SetActive(false);
         }
+        else
+        {
+            return;
+        }
     }
     void Update()
     {

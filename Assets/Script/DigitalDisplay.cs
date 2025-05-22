@@ -1,4 +1,5 @@
 using System;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,11 +11,25 @@ public class DigitalDisplay : MonoBehaviour
 
     //public event Action<KeypadManager> OnCodeCorrect;
 
+
+    public AudioClip falseCode;
+    public AudioClip correctCode;
+    public AudioClip button;
+    private AudioSource audioSource;
     public Door door;
     public bool Open = false;
     public GameObject KeypadUI;
 
     private string codeSequence = "";
+
+    void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+    }
 
     void Start()
     {
@@ -26,35 +41,62 @@ public class DigitalDisplay : MonoBehaviour
     {
         int digit = -1;
 
-        if (Input.GetKeyDown(KeyCode.Alpha0) || Input.GetKeyDown(KeyCode.Keypad0)) digit = 0;
-        else if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Keypad1)) digit = 1;
-        else if (Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Keypad2)) digit = 2;
-        else if (Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Keypad3)) digit = 3;
-        else if (Input.GetKeyDown(KeyCode.Alpha4) || Input.GetKeyDown(KeyCode.Keypad4)) digit = 4;
-        else if (Input.GetKeyDown(KeyCode.Alpha5) || Input.GetKeyDown(KeyCode.Keypad5)) digit = 5;
-        else if (Input.GetKeyDown(KeyCode.Alpha6) || Input.GetKeyDown(KeyCode.Keypad6)) digit = 6;
-        else if (Input.GetKeyDown(KeyCode.Alpha7) || Input.GetKeyDown(KeyCode.Keypad7)) digit = 7;
-        else if (Input.GetKeyDown(KeyCode.Alpha8) || Input.GetKeyDown(KeyCode.Keypad8)) digit = 8;
-        else if (Input.GetKeyDown(KeyCode.Alpha9) || Input.GetKeyDown(KeyCode.Keypad9)) digit = 9;
+       if (Input.GetKeyDown(KeyCode.Alpha0) || Input.GetKeyDown(KeyCode.Keypad0)) {
+    digit = 0;
+    AudioManager.instance.PlayClipAt(button, transform.position);
+}
+else if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Keypad1)) {
+    digit = 1;
+    AudioManager.instance.PlayClipAt(button, transform.position);
+}
+else if (Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Keypad2)) {
+    digit = 2;
+    AudioManager.instance.PlayClipAt(button, transform.position);
+}
+else if (Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Keypad3)) {
+    digit = 3;
+    AudioManager.instance.PlayClipAt(button, transform.position);
+}
+else if (Input.GetKeyDown(KeyCode.Alpha4) || Input.GetKeyDown(KeyCode.Keypad4)) {
+    digit = 4;
+    AudioManager.instance.PlayClipAt(button, transform.position);
+}
+else if (Input.GetKeyDown(KeyCode.Alpha5) || Input.GetKeyDown(KeyCode.Keypad5)) {
+    digit = 5;
+    AudioManager.instance.PlayClipAt(button, transform.position);
+}
+else if (Input.GetKeyDown(KeyCode.Alpha6) || Input.GetKeyDown(KeyCode.Keypad6)) {
+    digit = 6;
+    AudioManager.instance.PlayClipAt(button, transform.position);
+}
+else if (Input.GetKeyDown(KeyCode.Alpha7) || Input.GetKeyDown(KeyCode.Keypad7)) {
+    digit = 7;
+    AudioManager.instance.PlayClipAt(button, transform.position);
+}
+else if (Input.GetKeyDown(KeyCode.Alpha8) || Input.GetKeyDown(KeyCode.Keypad8)) {
+    digit = 8;
+    AudioManager.instance.PlayClipAt(button, transform.position);
+}
+else if (Input.GetKeyDown(KeyCode.Alpha9) || Input.GetKeyDown(KeyCode.Keypad9)) {
+    digit = 9;
+    AudioManager.instance.PlayClipAt(button, transform.position);
+}
 
-        // Ajout d'un chiffre
         if (digit != -1 && codeSequence.Length < 4)
         {
             codeSequence += digit.ToString();
-            UpdateDisplay(digit);
+            UpdateDisplay(digit); // Ajout d'un chiffre
         }
 
-        // Validation du code avec la touche Entrée ou KeypadEnter
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
         {
             if (codeSequence.Length > 0)
-                CheckResults();
+                CheckResults();         // Validation du code avec la touche Entrï¿½e ou KeypadEnter
         }
 
-        // Réinitialisation avec la touche Backspace
         if (Input.GetKeyDown(KeyCode.Backspace))
         {
-            ResetDisplay();
+            ResetDisplay(); // Reinitialisation avec la touche Backspace
         }
     }
 
@@ -107,6 +149,7 @@ public class DigitalDisplay : MonoBehaviour
         //Debug.Log($"Display {gameObject.name} checking code {codeSequence} against {keypad.GetCode()}");
         if (codeSequence == keypad.GetCode())
         {
+            AudioManager.instance.PlayClipAt(correctCode, transform.position);
             //OnCodeCorrect?.Invoke(keypad);
             Open = true;
             KeypadUI.gameObject.SetActive(false);
@@ -114,6 +157,7 @@ public class DigitalDisplay : MonoBehaviour
         else
         {
             ResetDisplay();
+            audioSource.PlayOneShot(falseCode);
         }
     }
 

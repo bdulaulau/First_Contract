@@ -58,6 +58,10 @@ public class ElevatorUp : MonoBehaviour
             {
                 other.transform.parent = null;
             }
+            else
+            {
+                return;
+            }
         }
         catch (System.Exception ex)
         {

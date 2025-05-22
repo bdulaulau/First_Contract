@@ -8,7 +8,6 @@ public class RadioTrigger : MonoBehaviour
     public bool isInRange;
     private bool hasTriggered = false;
     private int currentSentenceIndex = 0;
-
     void Update()
     {
         if (isInRange && !hasTriggered)
