@@ -11,6 +11,8 @@ public class Door : MonoBehaviour
     private Vector3 openPos;
     private bool isOpen = false;
     public DigitalDisplay digitalDisplay;
+    public AudioClip door;
+    private bool hasPlayedSound = false;
 
     void Start()
     {
@@ -21,9 +23,15 @@ public class Door : MonoBehaviour
     void Update()
     {
         OpenDoor();
+
+        if (isOpen && !hasPlayedSound)
+        {
+            AudioManager.instance.PlayClipAt(door, transform.position);
+            hasPlayedSound = true;
+        }
+
         Vector3 target = isOpen ? openPos : closedPos;
         transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
-        //digitalDisplay.Open = false;
     }
 
     public void OpenDoor()
@@ -38,5 +46,4 @@ public class Door : MonoBehaviour
     {
         isOpen = false;
     }
-
 }

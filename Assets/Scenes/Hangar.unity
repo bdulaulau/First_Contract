@@ -1770,6 +1770,7 @@ MonoBehaviour:
   isInRange: 0
   item: {fileID: 11400000, guid: 47d8ca69ae486e04d804833446ed3e06, type: 2}
   DestroyGiver: 1
+  feedback: {fileID: 8300000, guid: 1205ee37726361e4eb33e61737862f48, type: 3}
   interactUI: {fileID: 106055669}
 --- !u!1 &161265819
 GameObject:
@@ -11205,6 +11206,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 2241832e69815d649b69f023e351ecf2, type: 2}
     - target: {fileID: 6601474318025056847, guid: e60eeb25430c37c49b07511c61fc00b6, type: 3}
+      propertyPath: feedback
+      value: 
+      objectReference: {fileID: 8300000, guid: 1205ee37726361e4eb33e61737862f48, type: 3}
+    - target: {fileID: 6601474318025056847, guid: e60eeb25430c37c49b07511c61fc00b6, type: 3}
       propertyPath: interactUI
       value: 
       objectReference: {fileID: 106055669}
@@ -15405,6 +15410,18 @@ PrefabInstance:
     - target: {fileID: 1582816480486850394, guid: 6135b90648025dc42b72b90195b89905, type: 3}
       propertyPath: m_Name
       value: PorteEnd
+      objectReference: {fileID: 0}
+    - target: {fileID: 3709973747090555838, guid: 6135b90648025dc42b72b90195b89905, type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 8300000, guid: 68c83dadd237d9b4ba7e10255f578372, type: 3}
+    - target: {fileID: 3709973747090555838, guid: 6135b90648025dc42b72b90195b89905, type: 3}
+      propertyPath: speed
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3709973747090555838, guid: 6135b90648025dc42b72b90195b89905, type: 3}
+      propertyPath: openOffset
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3709973747090555838, guid: 6135b90648025dc42b72b90195b89905, type: 3}
       propertyPath: digitalDisplay
@@ -22329,6 +22346,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: a9fe8005ec7c89949b81914d48bee38b, type: 2}
     - target: {fileID: 6601474318025056847, guid: e60eeb25430c37c49b07511c61fc00b6, type: 3}
+      propertyPath: feedback
+      value: 
+      objectReference: {fileID: 8300000, guid: 1205ee37726361e4eb33e61737862f48, type: 3}
+    - target: {fileID: 6601474318025056847, guid: e60eeb25430c37c49b07511c61fc00b6, type: 3}
       propertyPath: interactUI
       value: 
       objectReference: {fileID: 106055669}
@@ -23557,6 +23578,14 @@ PrefabInstance:
       value: PorteWeapon
       objectReference: {fileID: 0}
     - target: {fileID: 3709973747090555838, guid: 6135b90648025dc42b72b90195b89905, type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 8300000, guid: 68c83dadd237d9b4ba7e10255f578372, type: 3}
+    - target: {fileID: 3709973747090555838, guid: 6135b90648025dc42b72b90195b89905, type: 3}
+      propertyPath: speed
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3709973747090555838, guid: 6135b90648025dc42b72b90195b89905, type: 3}
       propertyPath: digitalDisplay
       value: 
       objectReference: {fileID: 600391701}
@@ -23608,7 +23637,8 @@ PrefabInstance:
       propertyPath: associatedKeypad
       value: 
       objectReference: {fileID: 729670284}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5776534994936225840, guid: 6135b90648025dc42b72b90195b89905, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -24295,6 +24325,10 @@ PrefabInstance:
       propertyPath: item
       value: 
       objectReference: {fileID: 11400000, guid: e4a9e78edf5b41a439959f1dc4814cc5, type: 2}
+    - target: {fileID: 6601474318025056847, guid: e60eeb25430c37c49b07511c61fc00b6, type: 3}
+      propertyPath: feedback
+      value: 
+      objectReference: {fileID: 8300000, guid: 1205ee37726361e4eb33e61737862f48, type: 3}
     - target: {fileID: 6601474318025056847, guid: e60eeb25430c37c49b07511c61fc00b6, type: 3}
       propertyPath: interactUI
       value: 
@@ -104837,6 +104871,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: -72398642204426704, guid: efba6090c03fcac4087d0955e35ed458, type: 2}
+    - target: {fileID: 1857807843480060206, guid: b488d30c814581842b2b8e0bae60d431, type: 3}
+      propertyPath: lightOn
+      value: 
+      objectReference: {fileID: 8300000, guid: 9aebed36c0fd35c4e9052e8bae11db70, type: 3}
     - target: {fileID: 1857807843480060206, guid: b488d30c814581842b2b8e0bae60d431, type: 3}
       propertyPath: codesValid.Array.data[1]
       value: 4

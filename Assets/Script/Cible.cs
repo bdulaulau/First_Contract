@@ -8,6 +8,8 @@ public class Cible : MonoBehaviour
     public GameObject On;
     public GameObject Off;
 
+    public AudioClip lightOn;
+
     void Awake()
     {
         if (On != null) On.SetActive(false);
@@ -30,12 +32,16 @@ public class Cible : MonoBehaviour
                 }
             }
 
-            if (On != null) On.SetActive(isValid);  // si l'objet "On" existe on l'active ou le désactive selon la validité
-        }
-        else
-        {
-            currentValue = 0;
-            if (On != null) On.SetActive(false);
-        }
+            if (On != null)
+            {
+                On.SetActive(isValid);
+                AudioManager.instance.PlayClipAt(lightOn, transform.position);
+            }// si l'objet "On" existe on l'active ou le désactive selon la validité
+            }
+            else
+            {
+                currentValue = 0;
+                if (On != null) On.SetActive(false);
+            }
     }
 }

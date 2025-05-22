@@ -8,6 +8,7 @@ public class GiveItem : MonoBehaviour
     public bool isInRange;
     public Item item;
     public bool DestroyGiver;
+    public AudioClip feedback;
 
     private Interaction playerInteraction;
     public TextMeshProUGUI interactUI;
@@ -27,6 +28,7 @@ public class GiveItem : MonoBehaviour
         if (isInRange && playerInteraction != null && playerInteraction.CanInteract())
         {
             GiveItemToPlayer();
+            AudioManager.instance.PlayClipAt(feedback, transform.position);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
