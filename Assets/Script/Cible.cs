@@ -9,20 +9,27 @@ public class Cible : MonoBehaviour
     public GameObject Off;
 
     public AudioClip lightOn;
-
+    private bool isValid = false;
     void Awake()
     {
         if (On != null) On.SetActive(false);
         if (Off != null) Off.SetActive(true);
     }
 
+
+    void Update()
+    {
+        if (isValid == true)
+        {
+            AudioManager.instance.PlayClipAt(lightOn, transform.position);
+        } 
+    }
     public void TakeDamage(int amount)
     {
         if (currentValue < 9)
         {
             currentValue += 1;
 
-            bool isValid = false;
             foreach (int code in codesValid)  // On v�rifie si la nouvelle valeur fait partie des codes valides
             {
                 if (currentValue == code)
@@ -35,13 +42,13 @@ public class Cible : MonoBehaviour
             if (On != null)
             {
                 On.SetActive(isValid);
-                AudioManager.instance.PlayClipAt(lightOn, transform.position);
+
             }// si l'objet "On" existe on l'active ou le désactive selon la validité
-            }
-            else
-            {
-                currentValue = 0;
-                if (On != null) On.SetActive(false);
-            }
+        }
+        else
+        {
+            currentValue = 0;
+            if (On != null) On.SetActive(false);
+        }
     }
 }

@@ -5,6 +5,7 @@ public class MainMenu : MonoBehaviour
 {
     public string levelToLoad;
     public GameObject settingsWindow;
+    public AudioClip exit;
 
     public void Start()
     {
@@ -22,6 +23,7 @@ public class MainMenu : MonoBehaviour
 
     public void CloseSettingsButton()
     {
+        AudioManager.instance.PlayClipAt(exit, transform.position);
         settingsWindow.SetActive(false);
     }
 

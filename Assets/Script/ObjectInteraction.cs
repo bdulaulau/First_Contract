@@ -12,6 +12,7 @@ public class ObjectInteraction : MonoBehaviour
     public KeyDoorTrigger keyDoorTrigger;
     public bool OpenTheDoor = false;
     private bool Use = false;
+    public AudioClip ElecUp;
 
 
     private void Start()
@@ -41,7 +42,7 @@ public void Activate()
         if (_isActive)
         {
             Debug.Log("Activation avec la clé détectée");
-
+            AudioManager.instance.PlayClipAt(ElecUp, transform.position);
             // Consomme l'objet (clé)
             Inventory.Instance.UseItem(item);
             Inventory.Instance.UpdateInventoryUI();

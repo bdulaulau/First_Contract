@@ -19,6 +19,13 @@ public class Shoot : MonoBehaviour
     public bool weaponOut = false;
     public bool _weaponGet = false;
 
+    //Les sons pour le flingue
+    public AudioClip shoot;
+    public AudioClip reload;
+    public AudioClip off;
+    public AudioClip on;
+
+
     void Start()
     {
         _playerController = GetComponent<EntityControllerPlayerInput>(); // Récupération du script de déplacement
@@ -43,6 +50,7 @@ public class Shoot : MonoBehaviour
 
         if (Inventory.Instance.content.Contains(gun) && _munition > 0 && weaponOut ==true) //Inventory.Instance.content.Contains(gun)
         {
+            AudioManager.instance.PlayClipAt(shoot, transform.position);
             GameObject bullet = Instantiate(Bullet, firePoint.position, firePoint.rotation); //fait spawn le prefab de la bullet sur le firepoint
 
             //On récupère le script Bullet pour lui donner la direction
@@ -93,6 +101,7 @@ public class Shoot : MonoBehaviour
     {
         if (Inventory.Instance.content.Contains(gun))
         {
+            AudioManager.instance.PlayClipAt(off, transform.position);
             weaponOut = false;
             StatueUI.text = "Statue Weapon : OFF";
             StatueUI.color = Color.red;
@@ -104,6 +113,7 @@ public class Shoot : MonoBehaviour
     {
         if (Inventory.Instance.content.Contains(gun))
         {
+            AudioManager.instance.PlayClipAt(on, transform.position);
             weaponOut = true;
             StatueUI.text = "Statue Weapon : ON";
             StatueUI.color = Color.green;
@@ -112,6 +122,7 @@ public class Shoot : MonoBehaviour
     }
     private void OnRechargement()
     {
+        AudioManager.instance.PlayClipAt(reload, transform.position);
         _munition = munitionMax;
         UpdateMunition();
     }
