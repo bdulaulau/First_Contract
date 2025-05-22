@@ -22,8 +22,6 @@ public class Shoot : MonoBehaviour
     //Les sons pour le flingue
     public AudioClip shoot;
     public AudioClip reload;
-    public AudioClip off;
-    public AudioClip on;
 
 
     void Start()
@@ -101,7 +99,6 @@ public class Shoot : MonoBehaviour
     {
         if (Inventory.Instance.content.Contains(gun))
         {
-            AudioManager.instance.PlayClipAt(off, transform.position);
             weaponOut = false;
             StatueUI.text = "Statue Weapon : OFF";
             StatueUI.color = Color.red;
@@ -113,7 +110,6 @@ public class Shoot : MonoBehaviour
     {
         if (Inventory.Instance.content.Contains(gun))
         {
-            AudioManager.instance.PlayClipAt(on, transform.position);
             weaponOut = true;
             StatueUI.text = "Statue Weapon : ON";
             StatueUI.color = Color.green;

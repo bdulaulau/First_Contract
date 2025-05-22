@@ -2852,8 +2852,6 @@ MonoBehaviour:
   _weaponGet: 0
   shoot: {fileID: 8300000, guid: d8be889660df420418f0ebf7e8e023bc, type: 3}
   reload: {fileID: 8300000, guid: 0848fbb26a8328d47a0872ceee50e3e6, type: 3}
-  off: {fileID: 8300000, guid: 8f586fcb779b44a4098de252254f69ce, type: 3}
-  on: {fileID: 8300000, guid: 8cc6613f08aaeb64f9cbed85ee542cd4, type: 3}
 --- !u!114 &211964920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12127,7 +12125,7 @@ AudioSource:
   m_GameObject: {fileID: 843864162}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -5029237597054950594, guid: e0a041c155c6316439516be3545afe32, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -12226,7 +12224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0153dcefb14fb0479ebbd9f9fc376b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickSound: {fileID: 8300000, guid: b1d5afbf8badd704785e1ab360f37e9b, type: 3}
+  clickSound: {fileID: 8300000, guid: 2f21b64508ee6c64dab7919212162faa, type: 3}
 --- !u!1 &851113895
 GameObject:
   m_ObjectHideFlags: 0
