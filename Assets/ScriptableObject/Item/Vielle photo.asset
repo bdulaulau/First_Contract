@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c138d9cddab5b1a44abfd700a2a6dc98, type: 3}
-  m_Name: Anchora
+  m_Name: Vielle photo
   m_EditorClassIdentifier: 
-  id: 3
-  Name: Anchora
-  description: Des cigarettes a l'odeur nauseabonde... Qu'est ce que tu te sens bien
-    quand tu en fumes. Tu en as besoin. [Objet inutilisable dans la beta]
-  image: {fileID: 21300000, guid: 44b1f764369d06f42bbecb91d3ee1ec4, type: 3}
-  icon: {fileID: 21300000, guid: 44b1f764369d06f42bbecb91d3ee1ec4, type: 3}
+  id: 4
+  Name: Vielle photo
+  description: 'Une vielle photo prise avec un argentique, tu sais que c''est elle...
+    mais pourquoi tu n''arrives pas a te souvenir de ta propre mere ? '
+  image: {fileID: 21300000, guid: ac70c9ab5f6bc2147ac4e2ba313cb084, type: 3}
+  icon: {fileID: 21300000, guid: ac70c9ab5f6bc2147ac4e2ba313cb084, type: 3}

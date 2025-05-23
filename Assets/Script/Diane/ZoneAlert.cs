@@ -11,6 +11,8 @@ public class ZoneAlert : MonoBehaviour
     public float fadeDuration = 0.5f;
     public float displayDuration = 2f;
 
+    public Item item;
+
     private bool triggered = false;
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -38,6 +40,10 @@ public class ZoneAlert : MonoBehaviour
 
         yield return StartCoroutine(Fade(1f, 0f, fadeDuration));
         AudioListener.volume = 1f;
+        if (item != null)
+        {
+            GiveItemToPlayer();
+        }
     }
 
     IEnumerator Fade(float start, float end, float duration)
@@ -51,5 +57,12 @@ public class ZoneAlert : MonoBehaviour
             yield return null;
         }
         fadeImage.color = new Color(0, 0, 0, end);
+    }
+
+    public void GiveItemToPlayer()
+    {
+        Debug.Log("Objet reçu !");
+        Inventory.Instance.content.Add(item);
+        Inventory.Instance.GetItem();
     }
 }
