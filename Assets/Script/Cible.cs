@@ -10,44 +10,40 @@ public class Cible : MonoBehaviour
 
     public AudioClip lightOn;
     private bool isValid = false;
+
     void Awake()
     {
         if (On != null) On.SetActive(false);
         if (Off != null) Off.SetActive(true);
     }
 
-
-    void Update()
-    {
-        if (isValid == true)
-        {
-            AudioManager.instance.PlayClipAt(lightOn, transform.position);
-        } 
-    }
     public void TakeDamage(int amount)
     {
         if (currentValue < 9)
         {
             currentValue += 1;
 
-            foreach (int code in codesValid)  // On v�rifie si la nouvelle valeur fait partie des codes valides
+            isValid = false;
+
+            foreach (int code in codesValid)
             {
                 if (currentValue == code)
                 {
                     isValid = true;
-                    break; //on casse la loop d�s que c'est bon
+
+                    AudioManager.instance.PlayClipAt(lightOn, transform.position);
+                    break;
                 }
             }
 
             if (On != null)
-            {
                 On.SetActive(isValid);
-
-            }// si l'objet "On" existe on l'active ou le désactive selon la validité
         }
         else
         {
             currentValue = 0;
+            isValid = false;
+
             if (On != null) On.SetActive(false);
         }
     }
