@@ -1,10 +1,8 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class GiveItem : MonoBehaviour
 {
-
     public bool isInRange;
     public Item item;
     public bool DestroyGiver;
@@ -13,6 +11,9 @@ public class GiveItem : MonoBehaviour
     private Interaction playerInteraction;
     public TextMeshProUGUI interactUI;
 
+    [Header("Objets à activer/désactiver")]
+    public GameObject objectToDisable;
+    public GameObject objectToEnable;
 
     private void Start()
     {
@@ -22,21 +23,22 @@ public class GiveItem : MonoBehaviour
             playerInteraction = player.GetComponent<Interaction>();
         }
     }
+
     private void Update()
     {
-        // V�rifie si le joueur est dans la zone et appuie sur la touche d'interaction
         if (isInRange && playerInteraction != null && playerInteraction.CanInteract())
         {
             GiveItemToPlayer();
             AudioManager.instance.PlayClipAt(feedback, transform.position);
         }
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
             isInRange = true;
-            interactUI.gameObject.SetActive(true); // Affiche l’UI d’interaction
+            interactUI.gameObject.SetActive(true);
         }
     }
 
@@ -45,19 +47,25 @@ public class GiveItem : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             isInRange = false;
-            interactUI.gameObject.SetActive(false); // Cache le texte d’interaction
+            interactUI.gameObject.SetActive(false);
         }
     }
 
     public void GiveItemToPlayer()
     {
-        Debug.Log("Objet re�u !");
+        Debug.Log("Objet reçu !");
         Inventory.Instance.content.Add(item);
         Inventory.Instance.GetItem();
-        if(DestroyGiver == true)
+
+        // Désactivation / activation
+        if (objectToDisable != null)
+            objectToDisable.SetActive(false);
+        if (objectToEnable != null)
+            objectToEnable.SetActive(true);
+
+        if (DestroyGiver)
         {
             Destroy(gameObject);
         }
     }
-
 }
